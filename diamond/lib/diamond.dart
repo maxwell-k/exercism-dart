@@ -19,7 +19,6 @@ class Diamond {
 
     List<String> result = [];
     final int position = calculatePosition(letter);
-    final int width = calculateWidth(letter);
     result.add(text("A").padLeft(position + 1));
     switch (letter) {
       case 'A':
@@ -32,7 +31,8 @@ class Diamond {
         result.add(text("C"));
         break;
     }
-    result = result.map<String>((i) => i.padRight(width)).toList();
+    result =
+        result.map<String>((i) => i.padRight(calculateWidth(letter))).toList();
     for (var i = position - 1; i >= 0; i--) {
       result.add(result[i]);
     }
