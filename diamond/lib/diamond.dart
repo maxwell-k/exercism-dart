@@ -21,22 +21,22 @@ class Diamond {
     final int position = calculatePosition(letter);
     switch (letter) {
       case 'A': // position = 0
-        result.add(text("A").padLeft(1));
+        result.add(text("A").padLeft(position + 1));
         break;
       case 'B': // position = 1
-        result.add(text("A").padLeft(2));
-        result.add(text("B"));
+        result.add(text("A").padLeft(position + 1));
+        result.add(text("B").padLeft(position + 2));
         break;
       case 'C': // position = 2
-        result.add(text("A").padLeft(3));
-        result.add(text("B").padLeft(4));
-        result.add(text("C"));
+        result.add(text("A").padLeft(position + 1));
+        result.add(text("B").padLeft(position + 2));
+        result.add(text("C").padLeft(position + 3));
         break;
       case 'D': // position = 3
-        result.add(text("A").padLeft(4));
-        result.add(text("B").padLeft(5));
-        result.add(text("C").padLeft(6));
-        result.add(text("D"));
+        result.add(text("A").padLeft(position + 1));
+        result.add(text("B").padLeft(position + 2));
+        result.add(text("C").padLeft(position + 3));
+        result.add(text("D").padLeft(position + 4));
         break;
     }
     result =
