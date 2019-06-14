@@ -34,7 +34,7 @@ void main() {
             "  B B  ",
             "   A   "
           ]));
-    }, skip: true);
+    }, skip: false);
 
     test("Largest possible diamond", () {
       final List<String> result = diamond.rows("Z");
