@@ -93,6 +93,6 @@ void main() {
             "                        B B                        ",
             "                         A                         "
           ]));
-    }, skip: true);
+    }, skip: false);
   });
 }

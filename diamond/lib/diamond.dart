@@ -21,24 +21,8 @@ class Diamond {
 
     List<String> result = [];
     final int position = calculatePosition(letter);
-    switch (letter) {
-      case 'A': // position = 0
-        result.add(text(char(0)).padLeft(1 + position + 0));
-        break;
-      case 'B': // position = 1
-        result.add(text(char(0)).padLeft(1 + position + 0));
-        result.add(text(char(1)).padLeft(1 + position + 1));
-        break;
-      case 'C': // position = 2
-        result.add(text(char(0)).padLeft(1 + position + 0));
-        result.add(text(char(1)).padLeft(1 + position + 1));
-        result.add(text(char(2)).padLeft(1 + position + 2));
-        break;
-      case 'D': // position = 3
-        for (var i = 0; i <= position; i++) {
-          result.add(text(char(i)).padLeft(1 + position + i));
-        }
-        break;
+    for (var i = 0; i <= position; i++) {
+      result.add(text(char(i)).padLeft(1 + position + i));
     }
     result =
         result.map<String>((i) => i.padRight(calculateWidth(letter))).toList();
@@ -46,17 +30,5 @@ class Diamond {
       result.add(result[i]);
     }
     return result;
-
-    //    A
-
-    //    A
-    //   B B
-    //    A
-
-    //    A
-    //   B B
-    //  C   C
-    //   B B
-    //    A
   }
 }
