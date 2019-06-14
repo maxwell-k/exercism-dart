@@ -11,16 +11,14 @@ class Diamond {
     // use zero indexed alphabet A=0, B=1, C=2…
     final int position = number(letter) - number("A");
     final int width = 1 + 2 * position;
+    result.add("A".padLeft(1 + position).padRight(width));
     switch (letter) {
       case 'A':
-        result.add("A".padLeft(1 + position).padRight(width));
         break;
       case 'B':
-        result.add("A".padLeft(1 + position).padRight(width));
         result.add("B B".padRight(width));
         break;
       case 'C':
-        result.add("A".padLeft(1 + position).padRight(width));
         result.add("B B".padLeft(4).padRight(width));
         result.add("C   C".padRight(width));
         break;
