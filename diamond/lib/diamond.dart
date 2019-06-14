@@ -8,8 +8,9 @@ class Diamond {
         "$letter should be A-Z");
 
     List<String> result = [];
-    final int position = 1 + number(letter) - number("A")
-    final int width = 2 * position - 1;
+    // use zero indexed alphabet A=0, B=1, C=2…
+    final int position = number(letter) - number("A");
+    final int width = 1 + 2 * position;
     switch (letter) {
       case 'A':
         result.add("A".padRight(width));
@@ -17,15 +18,15 @@ class Diamond {
       case 'B':
         result.add("A".padLeft(2).padRight(width));
         result.add("B B".padRight(width));
-        result.add(result[0]);
         break;
       case 'C':
         result.add("A".padLeft(3).padRight(width));
         result.add("B B".padLeft(4).padRight(width));
         result.add("C   C".padRight(width));
-        result.add(result[1]);
-        result.add(result[0]);
         break;
+    }
+    for (var i = position - 1; i >= 0; i--) {
+      result.add(result[i]);
     }
     return result;
 
