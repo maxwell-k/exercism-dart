@@ -10,10 +10,11 @@ void main() {
       expect(result, equals(["A"]));
     }, skip: false);
 
-    test("Degenerate case with no row containing 3 distinct groups of spaces", () {
+    test("Degenerate case with no row containing 3 distinct groups of spaces",
+        () {
       final List<String> result = diamond.rows("B");
       expect(result, equals([" A ", "B B", " A "]));
-    }, skip: true);
+    }, skip: false);
 
     test("Smallest non-degenerate case with odd diamond side length", () {
       final List<String> result = diamond.rows("C");
@@ -22,7 +23,17 @@ void main() {
 
     test("Smallest non-degenerate case with even diamond side length", () {
       final List<String> result = diamond.rows("D");
-      expect(result, equals(["   A   ", "  B B  ", " C   C ", "D     D", " C   C ", "  B B  ", "   A   "]));
+      expect(
+          result,
+          equals([
+            "   A   ",
+            "  B B  ",
+            " C   C ",
+            "D     D",
+            " C   C ",
+            "  B B  ",
+            "   A   "
+          ]));
     }, skip: true);
 
     test("Largest possible diamond", () {
