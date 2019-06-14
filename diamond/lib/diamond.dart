@@ -3,6 +3,21 @@ class Diamond {
 
   int number(String letter) => letter.codeUnits[0];
 
+  String text(String letter) {
+    // without padding
+    switch (letter) {
+      case 'A':
+        return 'A';
+        break;
+      case 'B':
+        return 'B B';
+        break;
+      case 'C':
+        return 'C   C';
+        break;
+    }
+  }
+
   List<String> rows(String letter) {
     assert(number(letter) >= number("A") && number(letter) <= number("Z"),
         "$letter should be A-Z");
@@ -11,16 +26,16 @@ class Diamond {
     // use zero indexed alphabet A=0, B=1, C=2…
     final int position = number(letter) - number("A");
     final int width = 1 + 2 * position;
-    result.add("A".padLeft(position + 1));
+    result.add(text("A").padLeft(position + 1));
     switch (letter) {
       case 'A':
         break;
       case 'B':
-        result.add("$letter${' ' * position}$letter");
+        result.add(text("B"));
         break;
       case 'C':
-        result.add("B B".padLeft(4));
-        result.add("$letter${' ' * position}$letter");
+        result.add(text("B").padLeft(4));
+        result.add(text("C"));
         break;
     }
     result = result.map<String>((i) => i.padRight(width)).toList();
@@ -29,16 +44,16 @@ class Diamond {
     }
     return result;
 
-    // 0    A
+    //    A
 
-    //-1    A
-    // 0   B B
-    // 1    A
+    //    A
+    //   B B
+    //    A
 
-    //-2    A
-    //-1   B B
-    // 0  C   C
-    // 1   B B
-    // 2    A
+    //    A
+    //   B B
+    //  C   C
+    //   B B
+    //    A
   }
 }
