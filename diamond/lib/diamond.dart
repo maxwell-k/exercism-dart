@@ -1,7 +1,9 @@
 class Diamond {
   String letter;
 
-  int number(String letter) => letter.codeUnits[0];
+  int codeUnit(String letter) => letter.codeUnits[0];
+
+  int calculatePosition(String letter) => codeUnit(letter) - codeUnit("A");
 
   String text(String letter) {
     // without padding
@@ -19,12 +21,13 @@ class Diamond {
   }
 
   List<String> rows(String letter) {
-    assert(number(letter) >= number("A") && number(letter) <= number("Z"),
+    assert(
+        codeUnit(letter) >= codeUnit("A") && codeUnit(letter) <= codeUnit("Z"),
         "$letter should be A-Z");
 
     List<String> result = [];
     // use zero indexed alphabet A=0, B=1, C=2…
-    final int position = number(letter) - number("A");
+    final int position = calculatePosition(letter);
     final int width = 1 + 2 * position;
     result.add(text("A").padLeft(position + 1));
     switch (letter) {
