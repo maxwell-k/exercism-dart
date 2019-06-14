@@ -27,12 +27,12 @@ class Diamond {
         result.add(text("B"));
         break;
       case 'C':
-        result.add(text("B").padLeft(4));
+        result.add(text("B").padLeft(2 * position));
         result.add(text("C"));
         break;
       case 'D':
         result.add(text("B").padLeft(5));
-        result.add(text("C").padLeft(6));
+        result.add(text("C").padLeft(2 * position));
         result.add(text("D"));
         break;
     }
