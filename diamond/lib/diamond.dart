@@ -8,7 +8,7 @@ class Diamond {
         "$letter should be A-Z");
 
     List<String> result = [];
-    final int width = 1 + 2 * (number(letter) - number("A"));
+    final int width = 2 * (1 + number(letter) - number("A")) - 1;
     switch (letter) {
       case 'A':
         result.add("A".padRight(width));
