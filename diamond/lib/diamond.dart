@@ -1,24 +1,16 @@
 class Diamond {
+  // use zero indexed alphabet A=0, B=1, C=2…
   String letter;
 
   int codeUnit(String letter) => letter.codeUnits[0];
 
   int calculatePosition(String letter) => codeUnit(letter) - codeUnit("A");
 
-  String text(String letter) {
-    // without padding
-    switch (letter) {
-      case 'A':
-        return 'A';
-        break;
-      case 'B':
-        return 'B B';
-        break;
-      case 'C':
-        return 'C   C';
-        break;
-    }
-  }
+  int calculateWidth(String letter) => 1 + 2 * calculatePosition(letter);
+
+  String text(String letter) => letter == 'A'
+      ? letter
+      : '$letter${' ' * (calculateWidth(letter) - 2)}$letter';
 
   List<String> rows(String letter) {
     assert(
@@ -26,9 +18,8 @@ class Diamond {
         "$letter should be A-Z");
 
     List<String> result = [];
-    // use zero indexed alphabet A=0, B=1, C=2…
     final int position = calculatePosition(letter);
-    final int width = 1 + 2 * position;
+    final int width = calculateWidth(letter);
     result.add(text("A").padLeft(position + 1));
     switch (letter) {
       case 'A':
