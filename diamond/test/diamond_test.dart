@@ -19,7 +19,7 @@ void main() {
     test("Smallest non-degenerate case with odd diamond side length", () {
       final List<String> result = diamond.rows("C");
       expect(result, equals(["  A  ", " B B ", "C   C", " B B ", "  A  "]));
-    }, skip: true);
+    }, skip: false);
 
     test("Smallest non-degenerate case with even diamond side length", () {
       final List<String> result = diamond.rows("D");

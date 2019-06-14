@@ -6,6 +6,8 @@ class Diamond {
 
   int calculatePosition(String letter) => codeUnit(letter) - codeUnit("A");
 
+  String char(int position) => String.fromCharCode(codeUnit("A") + position);
+
   int calculateWidth(String letter) => 1 + 2 * calculatePosition(letter);
 
   String text(String letter) => letter == 'A'
@@ -21,22 +23,22 @@ class Diamond {
     final int position = calculatePosition(letter);
     switch (letter) {
       case 'A': // position = 0
-        result.add(text("A").padLeft(position + 1));
+        result.add(text(char(0)).padLeft(1 + position + 0));
         break;
       case 'B': // position = 1
-        result.add(text("A").padLeft(position + 1));
-        result.add(text("B").padLeft(position + 2));
+        result.add(text(char(0)).padLeft(1 + position + 0));
+        result.add(text(char(1)).padLeft(1 + position + 1));
         break;
       case 'C': // position = 2
-        result.add(text("A").padLeft(position + 1));
-        result.add(text("B").padLeft(position + 2));
-        result.add(text("C").padLeft(position + 3));
+        result.add(text(char(0)).padLeft(1 + position + 0));
+        result.add(text(char(1)).padLeft(1 + position + 1));
+        result.add(text(char(2)).padLeft(1 + position + 2));
         break;
       case 'D': // position = 3
-        result.add(text("A").padLeft(position + 1));
-        result.add(text("B").padLeft(position + 2));
-        result.add(text("C").padLeft(position + 3));
-        result.add(text("D").padLeft(position + 4));
+        result.add(text(char(0)).padLeft(1 + position + 0));
+        result.add(text(char(1)).padLeft(1 + position + 1));
+        result.add(text(char(2)).padLeft(1 + position + 2));
+        result.add(text(char(3)).padLeft(1 + position + 3));
         break;
     }
     result =
