@@ -19,18 +19,21 @@ class Diamond {
 
     List<String> result = [];
     final int position = calculatePosition(letter);
-    result.add(text("A").padLeft(position + 1));
     switch (letter) {
       case 'A':
+        result.add(text("A").padLeft(position + 1));
         break;
       case 'B':
+        result.add(text("A").padLeft(position + 1));
         result.add(text("B"));
         break;
       case 'C':
+        result.add(text("A").padLeft(position + 1));
         result.add(text("B").padLeft(2 * position));
         result.add(text("C"));
         break;
       case 'D':
+        result.add(text("A").padLeft(position + 1));
         result.add(text("B").padLeft(5));
         result.add(text("C").padLeft(2 * position));
         result.add(text("D"));
