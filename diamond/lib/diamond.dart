@@ -11,17 +11,17 @@ class Diamond {
     final int width = 1 + 2 * (number(letter) - number("A"));
     switch (letter) {
       case 'A':
-        result.add("A");
+        result.add("A".padRight(width));
         break;
       case 'B':
         result.add("A".padLeft(2).padRight(width));
-        result.add("B B");
+        result.add("B B".padRight(width));
         result.add(result[0]);
         break;
       case 'C':
         result.add("A".padLeft(3).padRight(width));
         result.add("B B".padLeft(4).padRight(width));
-        result.add("C   C");
+        result.add("C   C".padRight(width));
         result.add(result[1]);
         result.add(result[0]);
         break;
