@@ -7,16 +7,14 @@ class Diamond {
     assert(number(letter) >= number("A") && number(letter) <= number("Z"),
         "$letter should be A-Z");
 
-    List<String> result;
+    List<String> result = [];
     switch (letter) {
       case 'A':
-        result = ["A"];
+        result.add("A");
         break;
       case 'B':
-        result = [
-          "A".padLeft(2).padRight(3),
-          "B B",
-        ];
+        result.add("A".padLeft(2).padRight(3));
+        result.add("B B");
         result.add(result[0]);
         break;
     }
