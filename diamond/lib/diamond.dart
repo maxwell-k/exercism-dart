@@ -28,7 +28,7 @@ class Diamond {
         break;
       case 'C':
         result.add(text("B").padLeft(4));
-        result.add(text("C"));
+        result.add(text("C").padLeft(4));
         break;
     }
     result =
