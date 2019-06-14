@@ -16,11 +16,11 @@ class Diamond {
       case 'A':
         break;
       case 'B':
-        result.add("$letter $letter");
+        result.add("$letter${' ' * position}$letter");
         break;
       case 'C':
         result.add("B B".padLeft(4));
-        result.add("$letter   $letter");
+        result.add("$letter${' ' * position}$letter");
         break;
     }
     result = result.map<String>((i) => i.padRight(width)).toList();
@@ -40,7 +40,5 @@ class Diamond {
     // 0  C   C
     // 1   B B
     // 2    A
-
-    //return [" A ", "B B", " A "];
   }
 }
