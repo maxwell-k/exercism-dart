@@ -17,6 +17,13 @@ class Diamond {
         result.add("B B");
         result.add(result[0]);
         break;
+      case 'C':
+        result.add("A".padLeft(3).padRight(5));
+        result.add("B B".padLeft(4).padRight(5));
+        result.add("C   C");
+        result.add(result[1]);
+        result.add(result[0]);
+        break;
     }
     return result;
 
