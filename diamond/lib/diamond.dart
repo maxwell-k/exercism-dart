@@ -35,10 +35,9 @@ class Diamond {
         result.add(text(char(2)).padLeft(1 + position + 2));
         break;
       case 'D': // position = 3
-        result.add(text(char(0)).padLeft(1 + position + 0));
-        result.add(text(char(1)).padLeft(1 + position + 1));
-        result.add(text(char(2)).padLeft(1 + position + 2));
-        result.add(text(char(3)).padLeft(1 + position + 3));
+        for (var i = 0; i <= position; i++) {
+          result.add(text(char(i)).padLeft(1 + position + i));
+        }
         break;
     }
     result =
