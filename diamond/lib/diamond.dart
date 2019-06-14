@@ -13,14 +13,14 @@ class Diamond {
     final int width = 1 + 2 * position;
     switch (letter) {
       case 'A':
-        result.add("A".padRight(width));
+        result.add("A".padLeft(1 + position).padRight(width));
         break;
       case 'B':
-        result.add("A".padLeft(2).padRight(width));
+        result.add("A".padLeft(1 + position).padRight(width));
         result.add("B B".padRight(width));
         break;
       case 'C':
-        result.add("A".padLeft(3).padRight(width));
+        result.add("A".padLeft(1 + position).padRight(width));
         result.add("B B".padLeft(4).padRight(width));
         result.add("C   C".padRight(width));
         break;
