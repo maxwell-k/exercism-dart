@@ -1,7 +1,10 @@
 import 'dart:math' show pow;
 
 class DifferenceOfSquares {
-  num squareOfSum(num input) => 1;
+  num squareOfSum(num input) {
+    return 1;
+  }
+
   num sumOfSquare(num n) {
     if (n == 1) return 1; // avoid rounding error
     // https://en.wikipedia.org/wiki/Square_pyramidal_number
