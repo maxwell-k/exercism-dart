@@ -12,7 +12,7 @@ class Diamond {
 
   String text(int position) =>
       char(position) +
-      (position == 0 ? '' : (' ' * (width(position) - 2) + char(position)));
+      (position > 0 ? (' ' * (2 * position - 1) + char(position)) : '');
 
   List<String> rows(String letter) {
     assert(letter.codeUnitAt(0) >= a && letter.codeUnitAt(0) <= z,
@@ -22,7 +22,7 @@ class Diamond {
 
     final int position = calculatePosition(letter);
     for (var i = 0; i <= position; i++) {
-      result.add(text(i).padLeft(1 + position + i).padRight(width(position)));
+      result.add(text(i).padLeft(1 + position + i).padRight(1 + 2 * position));
     }
 
     return result.followedBy(result.reversed.skip(1)).toList();
