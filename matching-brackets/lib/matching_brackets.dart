@@ -1,5 +1,6 @@
 class MatchingBrackets {
   bool isPaired(String expression) {
-    return true;
+    int square = 0;
+    return square == 0;
   }
 }
