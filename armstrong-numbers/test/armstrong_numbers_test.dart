@@ -38,16 +38,16 @@ void main() {
     test("Four digit number that is not an Armstrong number", () {
       final bool result = armstrongNumbers.isArmstrongNumber(9475);
       expect(result, equals(false));
-    }, skip: true);
+    }, skip: false);
 
     test("Seven digit number that is an Armstrong number", () {
       final bool result = armstrongNumbers.isArmstrongNumber(9926315);
       expect(result, equals(true));
-    }, skip: true);
+    }, skip: false);
 
     test("Seven digit number that is not an Armstrong number", () {
       final bool result = armstrongNumbers.isArmstrongNumber(9926314);
       expect(result, equals(false));
-    }, skip: true);
+    }, skip: false);
   });
 }
