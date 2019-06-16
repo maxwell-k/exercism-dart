@@ -42,7 +42,7 @@ void main() {
     test("simple nested brackets", () {
       final bool result = matchingBrackets.isPaired("{[]}");
       expect(result, equals(true));
-    }, skip: true);
+    }, skip: false);
 
     test("several paired brackets", () {
       final bool result = matchingBrackets.isPaired("{}[]");
