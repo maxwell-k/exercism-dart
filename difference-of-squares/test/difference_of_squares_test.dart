@@ -48,7 +48,7 @@ void main() {
       test("difference of squares 5", () {
         final num result = differenceOfSquares.differenceOfSquares(5);
         expect(result, equals(170));
-      }, skip: true);
+      }, skip: false);
 
       test("difference of squares 100", () {
         final num result = differenceOfSquares.differenceOfSquares(100);
