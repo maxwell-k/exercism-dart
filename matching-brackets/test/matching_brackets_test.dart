@@ -72,7 +72,7 @@ void main() {
     test("paired and incomplete brackets", () {
       final bool result = matchingBrackets.isPaired("{}[");
       expect(result, equals(false));
-    }, skip: true);
+    }, skip: false);
 
     test("too many closing brackets", () {
       final bool result = matchingBrackets.isPaired("[]]");
