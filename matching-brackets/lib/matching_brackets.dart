@@ -1,3 +1,3 @@
 class MatchingBrackets {
-  // Put your code here
+  bool isPaired(String expression) => true;
 }
