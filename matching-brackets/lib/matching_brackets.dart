@@ -4,12 +4,16 @@ class MatchingBrackets {
     ']': '[',
     '}': '{',
   };
+
   bool isPaired(String expression) {
     List<String> open = [];
     bool closeBeforeOpen = false;
+
     for (var i = 0; i < expression.length; i++) {
       final c = expression[i];
+
       if (closeBeforeOpen) break;
+
       switch (expression[i]) {
         case '(':
         case '[':
@@ -27,6 +31,7 @@ class MatchingBrackets {
           break;
       }
     }
+
     return !closeBeforeOpen && open.length == 0;
   }
 }
