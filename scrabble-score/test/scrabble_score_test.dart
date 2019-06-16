@@ -16,7 +16,7 @@ void main() {
 
       test('uppercase letters', () {
         expect(score('A'), equals(1));
-      }, skip: true);
+      }, skip: false);
 
       test('valuable letters', () {
         expect(score('f'), equals(4));
