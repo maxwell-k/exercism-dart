@@ -53,7 +53,7 @@ void main() {
       test('a word containing one of every letter of the alphabet in reverse',
           () {
         expect(score('zyxwvutsrqponmlkjihgfedcba'), equals(87));
-      }, skip: true);
+      }, skip: false);
     });
   });
 }
