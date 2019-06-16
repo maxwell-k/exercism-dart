@@ -1,3 +1,5 @@
 class ArmstrongNumbers {
-  bool isArmstrongNumber(int number) => true;
+  bool isArmstrongNumber(int number) {
+    return true;
+  }
 }
