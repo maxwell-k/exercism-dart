@@ -53,7 +53,7 @@ void main() {
       test("difference of squares 100", () {
         final num result = differenceOfSquares.differenceOfSquares(100);
         expect(result, equals(25164150));
-      }, skip: true);
+      }, skip: false);
     });
   });
 }
