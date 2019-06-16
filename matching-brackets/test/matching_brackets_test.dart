@@ -47,17 +47,17 @@ void main() {
     test("several paired brackets", () {
       final bool result = matchingBrackets.isPaired("{}[]");
       expect(result, equals(true));
-    }, skip: true);
+    }, skip: false);
 
     test("paired and nested brackets", () {
       final bool result = matchingBrackets.isPaired("([{}({}[])])");
       expect(result, equals(true));
-    }, skip: true);
+    }, skip: false);
 
     test("unopened closing brackets", () {
       final bool result = matchingBrackets.isPaired("{[)][]}");
       expect(result, equals(false));
-    }, skip: true);
+    }, skip: false);
 
     test("unpaired and nested brackets", () {
       final bool result = matchingBrackets.isPaired("([{])");
