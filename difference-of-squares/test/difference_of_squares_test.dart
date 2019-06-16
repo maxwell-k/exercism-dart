@@ -36,7 +36,7 @@ void main() {
       test("sum of squares 100", () {
         final num result = differenceOfSquares.sumOfSquare(100);
         expect(result, equals(338350));
-      }, skip: true);
+      }, skip: false);
     });
 
     group('Subtract sum of squares from square of sums', () {
