@@ -8,18 +8,18 @@ class MatchingBrackets {
     List<String> open = [];
     bool closeBeforeOpen = false;
     for (var i = 0; i < expression.length; i++) {
+      final c = expression[i];
       if (closeBeforeOpen) break;
-
       switch (expression[i]) {
         case '(':
         case '[':
         case '{':
-          open.add(expression[i]);
+          open.add(c);
           break;
         case ')':
         case ']':
         case '}':
-          if (open.length > 0 && open.last == corresponding[expression[i]]) {
+          if (open.length > 0 && open.last == corresponding[c]) {
             open.removeLast();
           } else {
             closeBeforeOpen = true;
