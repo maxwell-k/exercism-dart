@@ -26,12 +26,12 @@ void main() {
       test("sum of squares 1", () {
         final num result = differenceOfSquares.sumOfSquare(1);
         expect(result, equals(1));
-      }, skip: true);
+      }, skip: false);
 
       test("sum of squares 5", () {
         final num result = differenceOfSquares.sumOfSquare(5);
         expect(result, equals(55));
-      }, skip: true);
+      }, skip: false);
 
       test("sum of squares 100", () {
         final num result = differenceOfSquares.sumOfSquare(100);
