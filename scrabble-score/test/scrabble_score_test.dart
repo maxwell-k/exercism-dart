@@ -28,7 +28,7 @@ void main() {
 
       test('long, mixed-case word', () {
         expect(score('OxyphenButazone'), equals(41));
-      }, skip: true);
+      }, skip: false);
 
       test('medium, valuable word', () {
         expect(score('quirky'), equals(22));
