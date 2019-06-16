@@ -1,12 +1,12 @@
 class Diamond {
   // use zero indexed alphabet A=0, B=1, C=2…
   String letter;
+  final a = "A".codeUnitAt(0);
+  final z = "Z".codeUnitAt(0);
 
-  int codeUnit(String letter) => letter.codeUnitAt(0);
+  int calculatePosition(String letter) => letter.codeUnitAt(0) - a;
 
-  int calculatePosition(String letter) => codeUnit(letter) - codeUnit("A");
-
-  String char(int position) => String.fromCharCode(codeUnit("A") + position);
+  String char(int position) => String.fromCharCode(a + position);
 
   int width(int position) => 1 + 2 * position;
 
@@ -15,8 +15,7 @@ class Diamond {
       : '$letter${' ' * (width(calculatePosition(letter)) - 2)}$letter';
 
   List<String> rows(String letter) {
-    assert(
-        codeUnit(letter) >= codeUnit("A") && codeUnit(letter) <= codeUnit("Z"),
+    assert(letter.codeUnitAt(0) >= a && letter.codeUnitAt(0) <= z,
         "$letter should be A-Z");
 
     var result = <String>[];
