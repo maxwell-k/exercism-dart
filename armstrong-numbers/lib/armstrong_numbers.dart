@@ -5,7 +5,7 @@ class ArmstrongNumbers {
     final digits = number.toString();
     int sum = 0;
 
-    for (var i = 0; i < digits.length; i++) {
+    for (int i = 0; i < digits.length; i++) {
       sum += pow(int.parse(digits[i]), digits.length) as int;
     }
     return number == sum;
