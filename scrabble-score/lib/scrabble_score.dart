@@ -13,9 +13,7 @@ int score(String word) {
   table.forEach((letters, score) =>
       letters.split(', ').forEach((letter) => scores[letter] = score));
 
-  int score = 0;
-  for (var i = 0; i < word.length; i++) {
-    score += scores[word[i].toUpperCase()];
-  }
-  return score;
+  return Iterable<int>.generate(
+          word.length, (i) => scores[word[i].toUpperCase()])
+      .fold(0, (sum, i) => sum + i);
 }
