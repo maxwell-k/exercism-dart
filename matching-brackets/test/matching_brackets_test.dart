@@ -83,7 +83,7 @@ void main() {
       final bool result =
           matchingBrackets.isPaired("(((185 + 223.85) * 15) - 543)/2");
       expect(result, equals(true));
-    }, skip: true);
+    }, skip: false);
 
     test("complex latex expression", () {
       final bool result = matchingBrackets.isPaired(
