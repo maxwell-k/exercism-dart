@@ -26,4 +26,11 @@ final data = const {
   'Y': 4,
   'Z': 10,
 };
-int score(String word) => 0;
+
+int score(String word) {
+  var scores = <int>[];
+  for (var i = 0; i < word.length; i++) {
+    scores.add(0);
+  }
+  return 0;
+}
