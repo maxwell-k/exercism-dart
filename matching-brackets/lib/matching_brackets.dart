@@ -8,9 +8,8 @@ class MatchingBrackets {
     List<String> open = [];
     bool closeBeforeOpen = false;
     for (var i = 0; i < expression.length; i++) {
-      if (closeBeforeOpen) {
-        break;
-      }
+      if (closeBeforeOpen) break;
+
       switch (expression[i]) {
         case '(':
         case '[':
