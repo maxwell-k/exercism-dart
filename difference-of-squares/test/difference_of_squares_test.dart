@@ -14,7 +14,7 @@ void main() {
       test("square of sum 5", () {
         final num result = differenceOfSquares.squareOfSum(5);
         expect(result, equals(225));
-      }, skip: true);
+      }, skip: false);
 
       test("square of sum 100", () {
         final num result = differenceOfSquares.squareOfSum(100);
