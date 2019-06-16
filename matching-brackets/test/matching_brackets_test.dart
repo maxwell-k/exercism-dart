@@ -17,7 +17,7 @@ void main() {
     test("unpaired brackets", () {
       final bool result = matchingBrackets.isPaired("[[");
       expect(result, equals(false));
-    }, skip: true);
+    }, skip: false);
 
     test("wrong ordered brackets", () {
       final bool result = matchingBrackets.isPaired("}{");
