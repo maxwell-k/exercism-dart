@@ -44,7 +44,7 @@ void main() {
 
       test('short word', () {
         expect(score('at'), equals(2));
-      }, skip: true);
+      }, skip: false);
 
       test('a word containing one of every letter of the alphabet', () {
         expect(score('abcdefghijklmnopqrstuvwxyz'), equals(87));
