@@ -19,7 +19,7 @@ void main() {
       test("square of sum 100", () {
         final num result = differenceOfSquares.squareOfSum(100);
         expect(result, equals(25502500));
-      }, skip: true);
+      }, skip: false);
     });
 
     group('Sum the squares of the numbers up to the given number', () {
