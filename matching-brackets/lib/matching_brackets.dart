@@ -24,7 +24,7 @@ class MatchingBrackets {
           curly -= 1;
           break;
       }
-      if (square < 0 || curly < 0) {
+      if (plain < 0 || square < 0 || curly < 0) {
         break;
       }
     }
