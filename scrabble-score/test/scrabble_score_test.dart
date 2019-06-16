@@ -40,7 +40,7 @@ void main() {
 
       test('short, valuable word', () {
         expect(score('zoo'), equals(12));
-      }, skip: true);
+      }, skip: false);
 
       test('short word', () {
         expect(score('at'), equals(2));
