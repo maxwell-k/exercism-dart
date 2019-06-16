@@ -12,7 +12,7 @@ void main() {
     test("empty string", () {
       final bool result = matchingBrackets.isPaired("");
       expect(result, equals(true));
-    }, skip: true);
+    }, skip: false);
 
     test("unpaired brackets", () {
       final bool result = matchingBrackets.isPaired("[[");
