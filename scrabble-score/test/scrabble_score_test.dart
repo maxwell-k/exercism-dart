@@ -20,7 +20,7 @@ void main() {
 
       test('valuable letters', () {
         expect(score('f'), equals(4));
-      }, skip: true);
+      }, skip: false);
 
       test('english-like word', () {
         expect(score('pinata'), equals(8));
