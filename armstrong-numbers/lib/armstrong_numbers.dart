@@ -1,3 +1,3 @@
 class ArmstrongNumbers {
-  // Put your code here
+  bool isArmstrongNumber(int number) => true;
 }
