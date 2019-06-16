@@ -14,7 +14,7 @@ class MatchingBrackets {
 
       if (closeBeforeOpen) break;
 
-      switch (expression[i]) {
+      switch (c) {
         case '(':
         case '[':
         case '{':
