@@ -1,5 +1,5 @@
 class MatchingBrackets {
-  final corresponding = {
+  final _corresponding = {
     ')': '(',
     ']': '[',
     '}': '{',
@@ -23,7 +23,9 @@ class MatchingBrackets {
         case ')':
         case ']':
         case '}':
-          if (open.length > 0 && open.last == corresponding[c]) {
+          if (open.isEmpty) {
+            closeBeforeOpen = true;
+          } else if (open.last == _corresponding[c]) {
             open.removeLast();
           } else {
             closeBeforeOpen = true;
@@ -32,6 +34,6 @@ class MatchingBrackets {
       }
     }
 
-    return !closeBeforeOpen && open.length == 0;
+    return !closeBeforeOpen && open.isEmpty;
   }
 }
