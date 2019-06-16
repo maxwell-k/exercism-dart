@@ -23,7 +23,7 @@ void main() {
     test("Three digit number that is an Armstrong number", () {
       final bool result = armstrongNumbers.isArmstrongNumber(153);
       expect(result, equals(true));
-    }, skip: true);
+    }, skip: false);
 
     test("Three digit number that is not an Armstrong number", () {
       final bool result = armstrongNumbers.isArmstrongNumber(100);
