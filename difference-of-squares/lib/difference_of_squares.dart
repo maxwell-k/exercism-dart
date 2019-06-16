@@ -2,10 +2,8 @@ import 'dart:math' show pow;
 
 class DifferenceOfSquares {
   num squareOfSum(num n) {
-    num sum = 0;
-    for (num i = 1; i <= n; i++) {
-      sum += i;
-    }
+    final num sum = Iterable<int>.generate(n as int, (int i) => i + 1)
+        .fold(0, (prev, element) => prev + element);
     return pow(sum, 2);
   }
 
