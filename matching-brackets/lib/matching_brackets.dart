@@ -1,3 +1,5 @@
 class MatchingBrackets {
-  bool isPaired(String expression) => true;
+  bool isPaired(String expression) {
+    return true;
+  }
 }
