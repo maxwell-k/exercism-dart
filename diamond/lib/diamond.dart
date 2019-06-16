@@ -10,19 +10,19 @@ class Diamond {
 
   int width(int position) => 1 + 2 * position;
 
-  String text(String letter) => letter == 'A'
-      ? letter
-      : '$letter${' ' * (width(calculatePosition(letter)) - 2)}$letter';
+  String text(int position) =>
+      char(position) +
+      (position == 0 ? '' : (' ' * (width(position) - 2) + char(position)));
 
   List<String> rows(String letter) {
     assert(letter.codeUnitAt(0) >= a && letter.codeUnitAt(0) <= z,
         "$letter should be A-Z");
 
     var result = <String>[];
+
     final int position = calculatePosition(letter);
     for (var i = 0; i <= position; i++) {
-      result.add(
-          text(char(i)).padLeft(1 + position + i).padRight(width(position)));
+      result.add(text(i).padLeft(1 + position + i).padRight(width(position)));
     }
 
     return result.followedBy(result.reversed.skip(1)).toList();
