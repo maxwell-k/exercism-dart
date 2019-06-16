@@ -24,7 +24,7 @@ void main() {
 
       test('english-like word', () {
         expect(score('pinata'), equals(8));
-      }, skip: true);
+      }, skip: false);
 
       test('long, mixed-case word', () {
         expect(score('OxyphenButazone'), equals(41));
