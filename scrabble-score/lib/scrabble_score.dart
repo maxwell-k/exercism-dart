@@ -1,1 +1,1 @@
-// Put your code here
+int score(String word) => 0;
