@@ -18,7 +18,7 @@ void main() {
     test("There are no 2 digit Armstrong numbers", () {
       final bool result = armstrongNumbers.isArmstrongNumber(10);
       expect(result, equals(false));
-    }, skip: true);
+    }, skip: false);
 
     test("Three digit number that is an Armstrong number", () {
       final bool result = armstrongNumbers.isArmstrongNumber(153);
