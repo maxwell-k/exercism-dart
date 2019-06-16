@@ -17,6 +17,9 @@ class MatchingBrackets {
           curly -= 1;
           break;
       }
+      if (square < 0 || curly < 0) {
+        break;
+      }
     }
     return square == 0 && curly == 0;
   }
