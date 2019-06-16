@@ -15,5 +15,5 @@ class DifferenceOfSquares {
     return (pow(n, 3) / 3) + (pow(n, 2) / 2) + (n / 6);
   }
 
-  num differenceOfSquares(num input) => null;
+  num differenceOfSquares(num n) => squareOfSum(n) - sumOfSquare(n);
 }
