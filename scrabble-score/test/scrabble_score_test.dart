@@ -32,7 +32,7 @@ void main() {
 
       test('medium, valuable word', () {
         expect(score('quirky'), equals(22));
-      }, skip: true);
+      }, skip: false);
 
       test('medium word', () {
         expect(score('street'), equals(6));
