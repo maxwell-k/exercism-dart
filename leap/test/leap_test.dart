@@ -23,7 +23,7 @@ void main() {
     test("is reintroduced every 400 years to adjust another day", () {
       final bool result = leap.leapYear(2000);
       expect(result, equals(true));
-    }, skip: true);
+    }, skip: false);
 
     test("is introduced every 4 years to adjust about a day before 400 A.D.",
         () {
