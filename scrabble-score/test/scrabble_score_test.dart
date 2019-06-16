@@ -36,7 +36,7 @@ void main() {
 
       test('medium word', () {
         expect(score('street'), equals(6));
-      }, skip: true);
+      }, skip: false);
 
       test('short, valuable word', () {
         expect(score('zoo'), equals(12));
