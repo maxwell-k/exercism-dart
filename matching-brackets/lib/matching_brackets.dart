@@ -1,33 +1,33 @@
 class MatchingBrackets {
+  final corresponding = {
+    ')': '(',
+    ']': '[',
+    '}': '{',
+  };
   bool isPaired(String expression) {
-    int plain = 0;
-    int square = 0;
-    int curly = 0;
+    List<String> open = [];
+    bool closeBeforeOpen = false;
     for (var i = 0; i < expression.length; i++) {
-      switch (expression[i]) {
-        case '(':
-          plain += 1;
-          break;
-        case ')':
-          plain -= 1;
-          break;
-        case '[':
-          square += 1;
-          break;
-        case ']':
-          square -= 1;
-          break;
-        case '{':
-          curly += 1;
-          break;
-        case '}':
-          curly -= 1;
-          break;
-      }
-      if (plain < 0 || square < 0 || curly < 0) {
+      if (closeBeforeOpen) {
         break;
       }
+      switch (expression[i]) {
+        case '(':
+        case '[':
+        case '{':
+          open.add(expression[i]);
+          break;
+        case ')':
+        case ']':
+        case '}':
+          if (open.length > 0 && open.last == corresponding[expression[i]]) {
+            open.removeLast();
+          } else {
+            closeBeforeOpen = true;
+          }
+          break;
+      }
     }
-    return plain == 0 && square == 0 && curly == 0;
+    return !closeBeforeOpen && open.length == 0;
   }
 }
