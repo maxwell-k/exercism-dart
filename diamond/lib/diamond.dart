@@ -2,7 +2,7 @@ class Diamond {
   // use zero indexed alphabet A=0, B=1, C=2…
   String letter;
 
-  int codeUnit(String letter) => letter.codeUnits[0];
+  int codeUnit(String letter) => letter.codeUnitAt(0);
 
   int calculatePosition(String letter) => codeUnit(letter) - codeUnit("A");
 
