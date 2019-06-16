@@ -67,7 +67,7 @@ void main() {
     test("paired and wrong nested brackets", () {
       final bool result = matchingBrackets.isPaired("[({]})");
       expect(result, equals(false));
-    }, skip: true);
+    }, skip: false);
 
     test("paired and incomplete brackets", () {
       final bool result = matchingBrackets.isPaired("{}[");
