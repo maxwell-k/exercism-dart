@@ -32,5 +32,5 @@ int score(String word) {
   for (var i = 0; i < word.length; i++) {
     scores.add(0);
   }
-  return 0;
+  return scores.fold(0, (total, i) => total + i);
 }
