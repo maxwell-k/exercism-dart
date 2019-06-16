@@ -30,7 +30,7 @@ final data = const {
 int score(String word) {
   var scores = <int>[];
   for (var i = 0; i < word.length; i++) {
-    scores.add(0);
+    scores.add(data[word[i]]);
   }
   return scores.fold(0, (total, i) => total + i);
 }
