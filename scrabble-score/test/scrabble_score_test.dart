@@ -12,7 +12,7 @@ void main() {
     group('should return the appropriate score for', () {
       test('lowercase letters', () {
         expect(score('a'), equals(1));
-      }, skip: true);
+      }, skip: false);
 
       test('uppercase letters', () {
         expect(score('A'), equals(1));
@@ -50,7 +50,8 @@ void main() {
         expect(score('abcdefghijklmnopqrstuvwxyz'), equals(87));
       }, skip: true);
 
-      test('a word containing one of every letter of the alphabet in reverse', () {
+      test('a word containing one of every letter of the alphabet in reverse',
+          () {
         expect(score('zyxwvutsrqponmlkjihgfedcba'), equals(87));
       }, skip: true);
     });
