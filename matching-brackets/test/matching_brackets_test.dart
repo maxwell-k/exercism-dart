@@ -32,7 +32,7 @@ void main() {
     test("paired with whitespace", () {
       final bool result = matchingBrackets.isPaired("{ }");
       expect(result, equals(true));
-    }, skip: true);
+    }, skip: false);
 
     test("partially paired brackets", () {
       final bool result = matchingBrackets.isPaired("{[])");
