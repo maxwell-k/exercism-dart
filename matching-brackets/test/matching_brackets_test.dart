@@ -77,7 +77,7 @@ void main() {
     test("too many closing brackets", () {
       final bool result = matchingBrackets.isPaired("[]]");
       expect(result, equals(false));
-    }, skip: true);
+    }, skip: false);
 
     test("math expression", () {
       final bool result =
