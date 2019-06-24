@@ -4,25 +4,25 @@
 
 'Two Fer' was submitted before 13 June 2019.
 
-| #. | Title                      | Done | Submitted | Reviewed | 
-| -- | -------------------------- | ---- | --------- | -------- | 
-| 1  | Hello World                | ✓    | ✓         | ✓        | 
-| 2  | Two Fer                    | ✓    | ✓         |          | 
-| 3  | Leap                       | ✓    |           |          | 
-| 4  | Scrabble Score             | ✓    |           |          | 
-| 5  | Armstrong Numbers          | ✓    |           |          | 
-| 6  | Difference Of Squares      | ✓    |           |          | 
-| 7  | Word Count                 |      |           |          | 
-| 8  | Bob                        |      |           |          | 
-| 9  | Space Age                  |      |           |          | 
-| 10 | Hamming                    |      |           |          | 
-| 11 | Gigasecond                 |      |           |          | 
-| 12 | Raindrops                  |      |           |          | 
-| 13 | RNA Transcription          |      |           |          | 
-| 14 | Anagram                    |      |           |          | 
-| 15 | Pascal's Triangle          |      |           |          | 
-| 16 | ISBN Verifier              |      |           |          | 
-| 17 | Binary Search Tree         |      |           |          | 
+| #. | Title                      | Done | Submitted | Reviewed |
+| -- | -------------------------- | ---- | --------- | -------- |
+| 1  | Hello World                | ✓    | ✓         | ✓        |
+| 2  | Two Fer                    | ✓    | ✓         |          |
+| 3  | Leap                       | ✓    |           |          |
+| 4  | Scrabble Score             | ✓    |           |          |
+| 5  | Armstrong Numbers          | ✓    |           |          |
+| 6  | Difference Of Squares      | ✓    |           |          |
+| 7  | Word Count                 |      |           |          |
+| 8  | Bob                        |      |           |          |
+| 9  | Space Age                  |      |           |          |
+| 10 | Hamming                    |      |           |          |
+| 11 | Gigasecond                 |      |           |          |
+| 12 | Raindrops                  |      |           |          |
+| 13 | RNA Transcription          |      |           |          |
+| 14 | Anagram                    |      |           |          |
+| 15 | Pascal's Triangle          |      |           |          |
+| 16 | ISBN Verifier              |      |           |          |
+| 17 | Binary Search Tree         |      |           |          |
 
 # Side exercises
 
