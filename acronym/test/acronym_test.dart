@@ -31,7 +31,7 @@ void main() {
         final String result =
             acronym.abbreviate("Complementary metal-oxide semiconductor");
         expect(result, equals("CMOS"));
-      }, skip: true);
+      });
 
       test("very long abbreviation", () {
         final String result = acronym.abbreviate(
