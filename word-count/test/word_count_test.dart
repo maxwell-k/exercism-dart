@@ -46,7 +46,7 @@ void ignoreSpecialCharacters() {
         myWordCounter.countWords("car: carpet as java: javascript!!&@\$%^&");
     expect(result,
         equals({"car": 1, "carpet": 1, "as": 1, "java": 1, "javascript": 1}));
-  }, skip: true);
+  }, skip: false);
 
   test("with quotations", () {
     final Map<String, int> result =
