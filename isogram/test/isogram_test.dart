@@ -40,12 +40,12 @@ void main() {
       test("word with duplicated character in mixed case, lowercase first", () {
         final bool result = isogram.isIsogram("alphAbet");
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test("hypothetical isogrammic word with hyphen", () {
         final bool result = isogram.isIsogram("thumbscrew-japingly");
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test("isogram with duplicated hyphen", () {
         final bool result = isogram.isIsogram("six-year-old");
