@@ -14,9 +14,7 @@ const colours = [
 ];
 
 class ResistorColorDuo {
-  int value(List<String> input) => List.generate(
-          input.length,
-          (int i) =>
-              colours.indexOf(input.reversed.toList()[i]) * pow(10, i) as int)
+  int value(List<String> input) => List.generate(input.length,
+          (int i) => colours.indexOf(input.removeLast()) * pow(10, i) as int)
       .reduce((total, current) => total + current);
 }
