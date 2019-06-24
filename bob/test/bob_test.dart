@@ -76,7 +76,7 @@ void main() {
     test("shouting with no exclamation mark", () {
       final String result = bob.response("I HATE THE DMV");
       expect(result, equals("Whoa, chill out!"));
-    }, skip: true);
+    }, skip: false);
 
     test("statement containing question mark", () {
       final String result = bob.response("Ending with ? means a question.");
