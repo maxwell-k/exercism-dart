@@ -1,6 +1,10 @@
 class Isogram {
   bool isIsogram(String word) {
-    final List<String> runes = word.toLowerCase().split("");
-    return runes.every((String e) => runes.where((i) => i == e).length == 1);
+    final List<String> runes = word
+        .toLowerCase()
+        .split("")
+        .where((i) => i != ' ' && i != '-')
+        .toList();
+    return runes.every((e) => runes.where((i) => i == e).length == 1);
   }
 }
