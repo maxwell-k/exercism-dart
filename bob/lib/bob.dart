@@ -1,3 +1,5 @@
 class Bob {
-  // Put your code here
+  String response(String prompt) {
+    return "Whatever.";
+  }
 }
