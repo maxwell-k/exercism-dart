@@ -79,6 +79,6 @@ void main() {
 
     test("disallow second strand longer", () {
       expect(() => hamming.distance("ATA", "AGTG"), throwsArgumentError);
-    }, skip: true);
+    }, skip: false);
   });
 }
