@@ -1,5 +1,9 @@
 class Bob {
   String response(String prompt) {
-    return "Whatever.";
+    switch (prompt) {
+      default:
+        return "Whatever.";
+    }
+    // return "Whoa, chill out!"));
   }
 }
