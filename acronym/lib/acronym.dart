@@ -3,7 +3,7 @@ class Acronym {
     return phrase
         .toUpperCase()
         .split(RegExp(r"[ -]+"))
-        .map((String i) => i[0])
+        .map((String i) => i[i.startsWith("_") ? 1 : 0])
         .join("");
   }
 }

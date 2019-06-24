@@ -53,7 +53,7 @@ void main() {
       test("underscore emphasis", () {
         final String result = acronym.abbreviate("The Road _Not_ Taken");
         expect(result, equals("TRNT"));
-      }, skip: true);
+      });
     });
   });
 }
