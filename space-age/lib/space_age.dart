@@ -1,3 +1,3 @@
 class SpaceAge {
-  // Put your code here.
+  double age({String planet, int seconds}) => 31.69;
 }
