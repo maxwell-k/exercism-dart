@@ -18,5 +18,5 @@ class ResistorColorDuo {
           input.length,
           (int i) =>
               colours.indexOf(input.reversed.toList()[i]) * pow(10, i) as int)
-      .fold(0, (total, current) => total + current);
+      .reduce((total, current) => total + current);
 }
