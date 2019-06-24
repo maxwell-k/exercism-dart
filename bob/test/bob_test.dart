@@ -71,7 +71,7 @@ void main() {
       final String result =
           bob.response("ZOMG THE %^*@#\$(*^ ZOMBIES ARE COMING!!11!!1!");
       expect(result, equals("Whoa, chill out!"));
-    }, skip: true);
+    }, skip: false);
 
     test("shouting with no exclamation mark", () {
       final String result = bob.response("I HATE THE DMV");
