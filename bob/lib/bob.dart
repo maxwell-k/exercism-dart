@@ -1,9 +1,9 @@
 class Bob {
   String response(String prompt) {
-    switch (prompt) {
-      default:
-        return "Whatever.";
+    if (prompt == prompt.toUpperCase()) {
+      return "Whoa, chill out!";
+    } else {
+      return "Whatever.";
     }
-    // return "Whoa, chill out!"));
   }
 }
