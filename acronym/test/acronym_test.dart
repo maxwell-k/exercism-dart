@@ -43,7 +43,7 @@ void main() {
         final String result =
             acronym.abbreviate("Something - I made up from thin air");
         expect(result, equals("SIMUFTA"));
-      }, skip: true);
+      });
 
       test("apostrophes", () {
         final String result = acronym.abbreviate("Halley's Comet");
