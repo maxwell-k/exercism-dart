@@ -1,9 +1,10 @@
 final durations = const {
-  "Earth": 31557600,
+  "Earth": 1,
 };
+const period = 31557600;
 
 class SpaceAge {
   double age({String planet, int seconds}) {
-    return (100 * seconds / durations[planet]).round() / 100;
+    return (100 * seconds / (period * durations[planet])).round() / 100;
   }
 }
