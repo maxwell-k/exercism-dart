@@ -39,13 +39,13 @@ void main() {
     test("talking forcefully", () {
       final String result = bob.response("Let's go make out behind the gym!");
       expect(result, equals("Whatever."));
-    }, skip: true);
+    }, skip: false);
 
     test("using acronyms in regular speech", () {
       final String result =
           bob.response("It's OK if you don't want to go to the DMV.");
       expect(result, equals("Whatever."));
-    }, skip: true);
+    }, skip: false);
 
     test("forceful question", () {
       final String result = bob.response("WHAT THE HELL WERE YOU THINKING?");
