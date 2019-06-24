@@ -37,7 +37,7 @@ void main() {
         final String result = acronym.abbreviate(
             "Rolling On The Floor Laughing So Hard That My Dogs Came Over And Licked Me");
         expect(result, equals("ROTFLSHTMDCOALM"));
-      }, skip: true);
+      });
 
       test("consecutive delimiters", () {
         final String result =
