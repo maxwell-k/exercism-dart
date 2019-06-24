@@ -26,7 +26,7 @@ void simpleTests() {
         myWordCounter.countWords("one fish two fish red fish blue fish");
     expect(
         result, equals({"one": 1, "fish": 4, "two": 1, "red": 1, "blue": 1}));
-  }, skip: true);
+  }, skip: false);
 }
 
 void ignoreSpecialCharacters() {
