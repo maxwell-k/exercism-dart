@@ -75,7 +75,7 @@ void main() {
 
     test("disallow first strand longer", () {
       expect(() => hamming.distance("AATG", "AAA"), throwsArgumentError);
-    }, skip: true);
+    }, skip: false);
 
     test("disallow second strand longer", () {
       expect(() => hamming.distance("ATA", "AGTG"), throwsArgumentError);
