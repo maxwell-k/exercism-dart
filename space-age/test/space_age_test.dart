@@ -14,7 +14,7 @@ void ageOnPlanetTests() {
 
   test("age on Mercury", () {
     expect(myAge.age(planet: "Mercury", seconds: 2134835688), equals(280.88));
-  }, skip: true);
+  }, skip: false);
 
   test("age on Venus", () {
     expect(myAge.age(planet: "Venus", seconds: 189839836), equals(9.78));
