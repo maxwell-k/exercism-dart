@@ -22,11 +22,11 @@ void ageOnPlanetTests() {
 
   test("age on Mars", () {
     expect(myAge.age(planet: "Mars", seconds: 2329871239), equals(39.25));
-  }, skip: true);
+  }, skip: false);
 
   test("age on Jupiter", () {
     expect(myAge.age(planet: "Jupiter", seconds: 901876382), equals(2.41));
-  }, skip: true);
+  }, skip: false);
 
   test("age on Saturn", () {
     expect(myAge.age(planet: "Saturn", seconds: 3000000000), equals(3.23));
