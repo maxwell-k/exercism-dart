@@ -24,7 +24,7 @@ void main() {
       final String result =
           bob.response("Does this cryogenic chamber make me look fat?");
       expect(result, equals("Sure."));
-    }, skip: true);
+    }, skip: false);
 
     test("asking a numeric question", () {
       final String result = bob.response("You are, what, like 15?");
