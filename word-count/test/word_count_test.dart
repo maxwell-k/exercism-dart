@@ -39,7 +39,7 @@ void ignoreSpecialCharacters() {
     final Map<String, int> result =
         myWordCounter.countWords("one,\ntwo,\nthree");
     expect(result, equals({"one": 1, "two": 1, "three": 1}));
-  }, skip: true);
+  }, skip: false);
 
   test("ignore punctuation", () {
     final Map<String, int> result =
