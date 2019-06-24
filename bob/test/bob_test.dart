@@ -107,7 +107,7 @@ void main() {
     test("alternate silence", () {
       final String result = bob.response("										");
       expect(result, equals("Fine. Be that way!"));
-    }, skip: true);
+    }, skip: false);
 
     test("multiple line question", () {
       final String result =
