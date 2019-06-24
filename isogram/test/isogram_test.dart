@@ -50,12 +50,12 @@ void main() {
       test("isogram with duplicated hyphen", () {
         final bool result = isogram.isIsogram("six-year-old");
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test("made-up name that is an isogram", () {
         final bool result = isogram.isIsogram("Emily Jung Schwartzkopf");
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test("duplicated character in the middle", () {
         final bool result = isogram.isIsogram("accentor");
