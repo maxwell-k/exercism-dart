@@ -1,5 +1,8 @@
 class WordCount {
   Map<String, int> countWords(String text) {
-    return {"word": 1};
+    Map<String, int> result = {};
+    text.split(' ').forEach((String i) =>
+        result.update(i, (int value) => value + 1, ifAbsent: () => 1));
+    return result;
   }
 }
