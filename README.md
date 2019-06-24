@@ -32,7 +32,7 @@
 | 2  | Matching Brackets      | ✓        | ✓     | ✓         |
 | 3  | Resistor Color         | ✓        | ✓     | ✓         |
 | 4  | Resistor Color Duo     |          |       |           |
-| 5  | Reverse String         |          |       |           |
+| 5  | Reverse String         | ✓        |       |           |
 | 6  | Isogram                |          |       |           |
 | 7  | Acronym                |          |       |           |
 | 8  | Phone Number           |          |       |           |
