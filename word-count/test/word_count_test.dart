@@ -69,7 +69,7 @@ void notJustWords() {
     final Map<String, int> result =
         myWordCounter.countWords("testing, 1, 2 testing");
     expect(result, equals({"testing": 2, "1": 1, "2": 1}));
-  }, skip: true);
+  }, skip: false);
 }
 
 void edgeCases() {
