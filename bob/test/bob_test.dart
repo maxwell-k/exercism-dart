@@ -65,7 +65,7 @@ void main() {
     test("question with no letters", () {
       final String result = bob.response("4?");
       expect(result, equals("Sure."));
-    }, skip: true);
+    }, skip: false);
 
     test("shouting with special characters", () {
       final String result =
