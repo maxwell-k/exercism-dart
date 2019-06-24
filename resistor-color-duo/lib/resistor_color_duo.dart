@@ -1,4 +1,4 @@
-const colors = [
+const colours = [
   'black',
   'brown',
   'red',
@@ -12,7 +12,6 @@ const colors = [
 ];
 
 class ResistorColorDuo {
-  int value(List<String> input) {
-    return 10;
-  }
+  int value(List<String> input) =>
+      colours.indexOf(input[0]) * 10 + colours.indexOf(input[1]);
 }
