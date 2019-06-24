@@ -1,4 +1,7 @@
 String reverse(String input) {
-  return List<String>.generate(input.length, (i) => input[input.length - i - 1])
-      .join('');
+  final output = StringBuffer();
+  for (var index = input.length - 1; index >= 0; index--) {
+    output.write(input[index]);
+  }
+  return output.toString();
 }
