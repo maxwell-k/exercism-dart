@@ -25,7 +25,7 @@ void main() {
         final String result =
             acronym.abbreviate("GNU Image Manipulation Program");
         expect(result, equals("GIMP"));
-      }, skip: true);
+      });
 
       test("punctuation without whitespace", () {
         final String result =
