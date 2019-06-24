@@ -90,5 +90,5 @@ void edgeCases() {
     final Map<String, int> result =
         myWordCounter.countWords(" multiple   whitespaces");
     expect(result, equals({"multiple": 1, "whitespaces": 1}));
-  }, skip: true);
+  }, skip: false);
 }
