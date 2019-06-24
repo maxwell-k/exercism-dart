@@ -34,7 +34,7 @@ void main() {
     test("asking gibberish", () {
       final String result = bob.response("fffbbcbeab?");
       expect(result, equals("Sure."));
-    }, skip: true);
+    }, skip: false);
 
     test("talking forcefully", () {
       final String result = bob.response("Let's go make out behind the gym!");
