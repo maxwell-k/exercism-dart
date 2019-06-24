@@ -1,6 +1,5 @@
 class Bob {
-  bool yell(String me) =>
-      me.contains(RegExp(r'[a-zA-Z]')) && me == me.toUpperCase();
+  bool yell(String me) => me != me.toLowerCase() && me == me.toUpperCase();
   bool question(String me) => me.endsWith("?");
   bool silence(String me) => me.isEmpty;
   String response(String message) {
