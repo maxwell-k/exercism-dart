@@ -16,12 +16,12 @@ void main() {
     test("identical strands", () {
       final int result = hamming.distance("A", "A");
       expect(result, equals(0));
-    }, skip: true);
+    }, skip: false);
 
     test("long identical strands", () {
       final int result = hamming.distance("GGACTGA", "GGACTGA");
       expect(result, equals(0));
-    }, skip: true);
+    }, skip: false);
 
     test("complete distance in single nucleotide strands", () {
       final int result = hamming.distance("A", "G");
