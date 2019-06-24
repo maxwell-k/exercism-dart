@@ -60,7 +60,7 @@ void main() {
     test("no letters", () {
       final String result = bob.response("1, 2, 3");
       expect(result, equals("Whatever."));
-    }, skip: true);
+    }, skip: false);
 
     test("question with no letters", () {
       final String result = bob.response("4?");
