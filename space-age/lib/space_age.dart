@@ -1,3 +1,5 @@
 class SpaceAge {
-  double age({String planet, int seconds}) => 31.69;
+  double age({String planet, int seconds}) {
+    return 31.69;
+  }
 }
