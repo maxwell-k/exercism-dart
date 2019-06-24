@@ -65,7 +65,7 @@ void multipleFactorTests() {
   test('the sound for 15 is PlingPlang as it has factors 3 and 5', () {
     final String result = raindrops.convert(15);
     expect(result, equals('PlingPlang'));
-  }, skip: true);
+  });
 
   test('the sound for 21 is PlingPlong as it has factors 3 and 7', () {
     final String result = raindrops.convert(21);

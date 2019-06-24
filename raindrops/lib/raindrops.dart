@@ -6,11 +6,13 @@ final words = const {
 
 class Raindrops {
   String convert(int number) {
+    String result = '';
     for (var i in words.keys) {
       if (number % i == 0) {
-        return words[i];
+        result += words[i];
       }
     }
-    return number.toString();
+    if (result.isEmpty) return number.toString();
+    return result;
   }
 }
