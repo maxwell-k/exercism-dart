@@ -48,7 +48,7 @@ void main() {
       test("apostrophes", () {
         final String result = acronym.abbreviate("Halley's Comet");
         expect(result, equals("HC"));
-      }, skip: true);
+      });
 
       test("underscore emphasis", () {
         final String result = acronym.abbreviate("The Road _Not_ Taken");
