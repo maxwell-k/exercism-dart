@@ -1,3 +1,5 @@
 class Hamming {
-  // Put your code here
+  int distance(String left, String right) {
+    return 0;
+  }
 }
