@@ -1,17 +1,17 @@
 class Bob {
-  bool yell(String prompt) =>
-      prompt.contains(RegExp(r'[a-zA-Z]')) && prompt == prompt.toUpperCase();
-  bool question(String prompt) => prompt.endsWith("?");
-  bool silence(String prompt) =>
-      prompt.isEmpty || RegExp(r'^\s+$').hasMatch(prompt);
-  String response(String prompt) {
-    if (yell(prompt) && question(prompt)) {
+  bool yell(String me) =>
+      me.contains(RegExp(r'[a-zA-Z]')) && me == me.toUpperCase();
+  bool question(String me) => me.endsWith("?");
+  bool silence(String me) => me.isEmpty;
+  String response(String input) {
+    final me = input.trim();
+    if (yell(me) && question(me)) {
       return "Calm down, I know what I'm doing!";
-    } else if (yell(prompt)) {
+    } else if (yell(me)) {
       return "Whoa, chill out!";
-    } else if (question(prompt)) {
+    } else if (question(me)) {
       return "Sure.";
-    } else if (silence(prompt)) {
+    } else if (silence(me)) {
       return "Fine. Be that way!";
     } else {
       return "Whatever.";
