@@ -92,7 +92,7 @@ void main() {
       final String result =
           bob.response("Wait! Hang on. Are you going to be OK?");
       expect(result, equals("Sure."));
-    }, skip: true);
+    }, skip: false);
 
     test("silence", () {
       final String result = bob.response("");
