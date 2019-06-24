@@ -1,3 +1,5 @@
 class WordCount {
-  Map<String, int> countWords(String text) => {"word": 1};
+  Map<String, int> countWords(String text) {
+    return {"word": 1};
+  }
 }
