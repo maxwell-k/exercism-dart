@@ -9,6 +9,8 @@ class Bob {
       return "Whoa, chill out!";
     } else if (question(prompt)) {
       return "Sure.";
+    } else if (prompt.isEmpty) {
+      return "Fine. Be that way!";
     } else {
       return "Whatever.";
     }

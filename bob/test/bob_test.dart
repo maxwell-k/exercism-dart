@@ -97,7 +97,7 @@ void main() {
     test("silence", () {
       final String result = bob.response("");
       expect(result, equals("Fine. Be that way!"));
-    }, skip: true);
+    }, skip: false);
 
     test("prolonged silence", () {
       final String result = bob.response("          ");
