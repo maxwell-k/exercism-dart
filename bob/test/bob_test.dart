@@ -118,18 +118,18 @@ void main() {
     test("starting with whitespace", () {
       final String result = bob.response("         hmmmmmmm...");
       expect(result, equals("Whatever."));
-    }, skip: true);
+    }, skip: false);
 
     test("ending with whitespace", () {
       final String result =
           bob.response("Okay if like my  spacebar  quite a bit?   ");
       expect(result, equals("Sure."));
-    }, skip: true);
+    }, skip: false);
 
     test("other whitespace", () {
       final String result = bob.response("\n");
       expect(result, equals("Fine. Be that way!"));
-    }, skip: true);
+    }, skip: false);
 
     test("non-question ending with whitespace", () {
       final String result =
