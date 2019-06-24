@@ -31,7 +31,7 @@
 | 1  | Diamond                | ✓        | ✓     | ✓         |
 | 2  | Matching Brackets      | ✓        | ✓     | ✓         |
 | 3  | Resistor Color         | ✓        | ✓     | ✓         |
-| 4  | Resistor Color Duo     |          |       |           |
+| 4  | Resistor Color Duo     | ✓        |       |           |
 | 5  | Reverse String         | ✓        |       |           |
 | 6  | Isogram                |          |       |           |
 | 7  | Acronym                |          |       |           |
