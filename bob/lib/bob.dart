@@ -1,5 +1,6 @@
 class Bob {
-  bool yell(String prompt) => prompt == prompt.toUpperCase();
+  bool yell(String prompt) =>
+      prompt.contains(RegExp(r'[a-zA-Z]')) && prompt == prompt.toUpperCase();
   bool question(String prompt) => prompt.endsWith("?");
   String response(String prompt) {
     if (yell(prompt) && question(prompt)) {
