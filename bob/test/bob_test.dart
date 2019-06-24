@@ -50,7 +50,7 @@ void main() {
     test("forceful question", () {
       final String result = bob.response("WHAT THE HELL WERE YOU THINKING?");
       expect(result, equals("Calm down, I know what I'm doing!"));
-    }, skip: true);
+    }, skip: false);
 
     test("shouting numbers", () {
       final String result = bob.response("1, 2, 3 GO!");
