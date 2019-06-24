@@ -60,12 +60,12 @@ void main() {
       test("duplicated character in the middle", () {
         final bool result = isogram.isIsogram("accentor");
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test("same first and last characters", () {
         final bool result = isogram.isIsogram("angola");
         expect(result, equals(false));
-      }, skip: true);
+      });
     });
   });
 }
