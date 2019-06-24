@@ -55,7 +55,7 @@ void main() {
     test("shouting numbers", () {
       final String result = bob.response("1, 2, 3 GO!");
       expect(result, equals("Whoa, chill out!"));
-    }, skip: true);
+    }, skip: false);
 
     test("no letters", () {
       final String result = bob.response("1, 2, 3");
