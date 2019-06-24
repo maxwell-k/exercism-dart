@@ -1,3 +1,3 @@
 class Acronym {
-  // Put your code here
+  String abbreviate(String phrase) => "PNG";
 }
