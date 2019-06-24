@@ -86,7 +86,7 @@ void main() {
     test("non-letters with question", () {
       final String result = bob.response(":) ?");
       expect(result, equals("Sure."));
-    }, skip: true);
+    }, skip: false);
 
     test("prattling on", () {
       final String result =
