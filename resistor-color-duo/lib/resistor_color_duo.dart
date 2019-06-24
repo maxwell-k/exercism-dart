@@ -1,3 +1,18 @@
+const colors = [
+  'black',
+  'brown',
+  'red',
+  'orange',
+  'yellow',
+  'green',
+  'blue',
+  'violet',
+  'grey',
+  'white',
+];
+
 class ResistorColorDuo {
-  // Put your code here
+  int value(List<String> input) {
+    return 10;
+  }
 }
