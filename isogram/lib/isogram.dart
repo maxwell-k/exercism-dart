@@ -1,3 +1,3 @@
 class Isogram {
-  // Put your code here
+  bool isIsogram(String word) => true;
 }
