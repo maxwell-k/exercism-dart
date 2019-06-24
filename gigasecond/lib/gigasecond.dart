@@ -1,5 +1,4 @@
-import 'package:dart2_constant/core.dart' as polyfill;
+import 'dart:math' show pow;
 
-DateTime add(DateTime birthDate) {
-  return DateTime.utc(2043, polyfill.DateTime.january, 1, 1, 46, 40);
-}
+DateTime add(DateTime birthDate) =>
+    birthDate.add(Duration(seconds: pow(10, 9) as int));
