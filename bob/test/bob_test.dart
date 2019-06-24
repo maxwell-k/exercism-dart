@@ -135,6 +135,6 @@ void main() {
       final String result =
           bob.response("This is a statement ending with whitespace      ");
       expect(result, equals("Whatever."));
-    }, skip: true);
+    }, skip: false);
   });
 }
