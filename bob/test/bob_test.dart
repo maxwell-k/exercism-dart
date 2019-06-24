@@ -81,7 +81,7 @@ void main() {
     test("statement containing question mark", () {
       final String result = bob.response("Ending with ? means a question.");
       expect(result, equals("Whatever."));
-    }, skip: true);
+    }, skip: false);
 
     test("non-letters with question", () {
       final String result = bob.response(":) ?");
