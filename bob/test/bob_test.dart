@@ -29,7 +29,7 @@ void main() {
     test("asking a numeric question", () {
       final String result = bob.response("You are, what, like 15?");
       expect(result, equals("Sure."));
-    }, skip: true);
+    }, skip: false);
 
     test("asking gibberish", () {
       final String result = bob.response("fffbbcbeab?");
