@@ -19,7 +19,7 @@ void identityTests() {
   test('the sound for 3 is Pling', () {
     final String result = raindrops.convert(3);
     expect(result, equals('Pling'));
-  }, skip: true);
+  }, skip: false);
 
   test('the sound for 5 is Plang', () {
     final String result = raindrops.convert(5);
@@ -38,7 +38,9 @@ void factorTests() {
     expect(result, equals('Pling'));
   }, skip: true);
 
-  test('2 to the power 3 does not make a raindrop sound as 3 is the exponent not the base', () {
+  test(
+      '2 to the power 3 does not make a raindrop sound as 3 is the exponent not the base',
+      () {
     final String result = raindrops.convert(8);
     expect(result, equals('8'));
   }, skip: true);
