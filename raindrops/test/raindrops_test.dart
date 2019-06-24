@@ -24,12 +24,12 @@ void identityTests() {
   test('the sound for 5 is Plang', () {
     final String result = raindrops.convert(5);
     expect(result, equals('Plang'));
-  }, skip: true);
+  }, skip: false);
 
   test('the sound for 7 is Plong', () {
     final String result = raindrops.convert(7);
     expect(result, equals('Plong'));
-  }, skip: true);
+  }, skip: false);
 }
 
 void factorTests() {
