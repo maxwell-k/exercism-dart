@@ -16,16 +16,16 @@ void main() {
     test("a capitalized word", () {
       final String result = reverse("Ramen");
       expect(result, equals("nemaR"));
-    }, skip: true);
+    });
 
     test("a sentence with punctuation", () {
       final String result = reverse("I'm hungry!");
       expect(result, equals("!yrgnuh m'I"));
-    }, skip: true);
+    });
 
     test("a palindrome", () {
       final String result = reverse("racecar");
       expect(result, equals("racecar"));
-    }, skip: true);
+    });
   });
 }
