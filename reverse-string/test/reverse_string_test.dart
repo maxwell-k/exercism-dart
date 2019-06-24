@@ -6,12 +6,12 @@ void main() {
     test("an empty string", () {
       final String result = reverse("");
       expect(result, equals(""));
-    }, skip: false);
+    });
 
     test("a word", () {
       final String result = reverse("robot");
       expect(result, equals("tobor"));
-    }, skip: true);
+    });
 
     test("a capitalized word", () {
       final String result = reverse("Ramen");
