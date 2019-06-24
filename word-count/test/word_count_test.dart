@@ -19,7 +19,7 @@ void simpleTests() {
   test("count one of each word", () {
     final Map<String, int> result = myWordCounter.countWords("one of each");
     expect(result, equals({"one": 1, "of": 1, "each": 1}));
-  }, skip: true);
+  }, skip: false);
 
   test("multiple occurrences of a word", () {
     final Map<String, int> result =
