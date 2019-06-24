@@ -19,18 +19,18 @@ void main() {
       test("word with one duplicated character", () {
         final bool result = isogram.isIsogram("eleven");
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test("word with one duplicated character from the end of the alphabet",
           () {
         final bool result = isogram.isIsogram("zzyzx");
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test("longest reported english isogram", () {
         final bool result = isogram.isIsogram("subdermatoglyphic");
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test("word with duplicated character in mixed case", () {
         final bool result = isogram.isIsogram("Alphabet");
