@@ -13,7 +13,7 @@
 | 5  | Armstrong Numbers          | ✓    |           |          |
 | 6  | Difference Of Squares      | ✓    |           |          |
 | 7  | Word Count                 | ✓    |           |          |
-| 8  | Bob                        |      |           |          |
+| 8  | Bob                        | ✓    |           |          |
 | 9  | Space Age                  |      |           |          |
 | 10 | Hamming                    |      |           |          |
 | 11 | Gigasecond                 |      |           |          |
