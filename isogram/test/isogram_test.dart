@@ -35,7 +35,7 @@ void main() {
       test("word with duplicated character in mixed case", () {
         final bool result = isogram.isIsogram("Alphabet");
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test("word with duplicated character in mixed case, lowercase first", () {
         final bool result = isogram.isIsogram("alphAbet");
