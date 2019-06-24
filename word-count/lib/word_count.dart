@@ -11,7 +11,7 @@ class WordCount {
         .map((i) => i.startsWith("'") && i.endsWith("'")
             ? i.substring(1, i.length - 1)
             : i)
-        .where((i) => !i.isEmpty)
+        .where((i) => i.isNotEmpty)
         .fold(Map<String, int>(), _add);
   }
 }
