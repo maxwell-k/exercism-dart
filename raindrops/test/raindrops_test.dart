@@ -36,29 +36,29 @@ void factorTests() {
   test('the sound for 6 is Pling as it has a factor 3', () {
     final String result = raindrops.convert(6);
     expect(result, equals('Pling'));
-  }, skip: true);
+  });
 
   test(
       '2 to the power 3 does not make a raindrop sound as 3 is the exponent not the base',
       () {
     final String result = raindrops.convert(8);
     expect(result, equals('8'));
-  }, skip: true);
+  });
 
   test('the sound for 9 is Pling as it has a factor 3', () {
     final String result = raindrops.convert(9);
     expect(result, equals('Pling'));
-  }, skip: true);
+  });
 
   test('the sound for 10 is Plang as it has a factor 5', () {
     final String result = raindrops.convert(10);
     expect(result, equals('Plang'));
-  }, skip: true);
+  });
 
   test('the sound for 14 is Plong as it has a factor of 7', () {
     final String result = raindrops.convert(14);
     expect(result, equals('Plong'));
-  }, skip: true);
+  });
 }
 
 void multipleFactorTests() {
