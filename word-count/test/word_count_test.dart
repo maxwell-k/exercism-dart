@@ -61,7 +61,7 @@ void ignoreSpecialCharacters() {
           "large": 2,
           "and": 1
         }));
-  }, skip: true);
+  }, skip: false);
 }
 
 void notJustWords() {
