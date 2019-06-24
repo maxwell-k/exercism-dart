@@ -15,9 +15,9 @@
 | 7  | Word Count                 | ✓    |           |          |
 | 8  | Bob                        | ✓    |           |          |
 | 9  | Space Age                  | ✓    |           |          |
-| 10 | Hamming                    |      |           |          |
+| 10 | Hamming                    | ✓    |           |          |
 | 11 | Gigasecond                 |      |           |          |
-| 12 | Raindrops                  |      |           |          |
+| 12 | Raindrops                  | ✓    |           |          |
 | 13 | RNA Transcription          |      |           |          |
 | 14 | Anagram                    |      |           |          |
 | 15 | Pascal's Triangle          |      |           |          |
