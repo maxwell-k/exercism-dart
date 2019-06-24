@@ -14,14 +14,15 @@ void main() {
       test("isogram with only lower case characters", () {
         final bool result = isogram.isIsogram("isogram");
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test("word with one duplicated character", () {
         final bool result = isogram.isIsogram("eleven");
         expect(result, equals(false));
       }, skip: true);
 
-      test("word with one duplicated character from the end of the alphabet", () {
+      test("word with one duplicated character from the end of the alphabet",
+          () {
         final bool result = isogram.isIsogram("zzyzx");
         expect(result, equals(false));
       }, skip: true);
