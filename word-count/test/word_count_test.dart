@@ -77,7 +77,7 @@ void edgeCases() {
     final Map<String, int> result =
         myWordCounter.countWords("go Go GO Stop stop");
     expect(result, equals({"go": 3, "stop": 2}));
-  }, skip: true);
+  }, skip: false);
 
   test("with apostrophes", () {
     final Map<String, int> result =
