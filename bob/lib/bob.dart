@@ -11,8 +11,7 @@ class Bob {
       return "Sure.";
     } else if (me.isEmpty) {
       return "Fine. Be that way!";
-    } else {
-      return "Whatever.";
     }
+    return "Whatever.";
   }
 }
