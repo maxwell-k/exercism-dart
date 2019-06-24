@@ -33,7 +33,7 @@
 | 3  | Resistor Color         | ✓        | ✓     | ✓         |
 | 4  | Resistor Color Duo     | ✓        |       |           |
 | 5  | Reverse String         | ✓        |       |           |
-| 6  | Isogram                |          |       |           |
+| 6  | Isogram                | ✓        |       |           |
 | 7  | Acronym                |          |       |           |
 | 8  | Phone Number           |          |       |           |
 | 9  | Prime Factors          |          |       |           |
