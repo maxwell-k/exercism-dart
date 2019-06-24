@@ -12,7 +12,7 @@ class Raindrops {
         result += words[i];
       }
     }
-    if (result.isEmpty) return number.toString();
+    if (result.isEmpty) result = number.toString();
     return result;
   }
 }
