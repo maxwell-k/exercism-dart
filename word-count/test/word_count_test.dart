@@ -33,7 +33,7 @@ void ignoreSpecialCharacters() {
   test("handles cramped lists", () {
     final Map<String, int> result = myWordCounter.countWords("one,two,three");
     expect(result, equals({"one": 1, "two": 1, "three": 1}));
-  }, skip: true);
+  }, skip: false);
 
   test("handles expanded lists", () {
     final Map<String, int> result =
