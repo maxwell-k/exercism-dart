@@ -18,7 +18,7 @@ void main() {
     test("shouting gibberish", () {
       final String result = bob.response("FCECDFCAAB");
       expect(result, equals("Whoa, chill out!"));
-    }, skip: true);
+    }, skip: false);
 
     test("asking a question", () {
       final String result =
