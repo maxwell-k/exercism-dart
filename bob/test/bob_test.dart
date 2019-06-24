@@ -113,7 +113,7 @@ void main() {
       final String result =
           bob.response("\nDoes this cryogenic chamber make me look fat?\nNo.");
       expect(result, equals("Whatever."));
-    }, skip: true);
+    }, skip: false);
 
     test("starting with whitespace", () {
       final String result = bob.response("         hmmmmmmm...");
