@@ -26,52 +26,52 @@ void main() {
     test("complete distance in single nucleotide strands", () {
       final int result = hamming.distance("A", "G");
       expect(result, equals(1));
-    }, skip: true);
+    }, skip: false);
 
     test("complete distance in small strands", () {
       final int result = hamming.distance("AG", "CT");
       expect(result, equals(2));
-    }, skip: true);
+    }, skip: false);
 
     test("small distance in small strands", () {
       final int result = hamming.distance("AT", "CT");
       expect(result, equals(1));
-    }, skip: true);
+    }, skip: false);
 
     test("small distance", () {
       final int result = hamming.distance("GGACG", "GGTCG");
       expect(result, equals(1));
-    }, skip: true);
+    }, skip: false);
 
     test("small distance in long strands", () {
       final int result = hamming.distance("ACCAGGG", "ACTATGG");
       expect(result, equals(2));
-    }, skip: true);
+    }, skip: false);
 
     test("non-unique character in first strand", () {
       final int result = hamming.distance("AAG", "AAA");
       expect(result, equals(1));
-    }, skip: true);
+    }, skip: false);
 
     test("non-unique character in second strand", () {
       final int result = hamming.distance("AAA", "AAG");
       expect(result, equals(1));
-    }, skip: true);
+    }, skip: false);
 
     test("same nucleotides in different positions", () {
       final int result = hamming.distance("TAG", "GAT");
       expect(result, equals(2));
-    }, skip: true);
+    }, skip: false);
 
     test("large distance", () {
       final int result = hamming.distance("GATACA", "GCATAA");
       expect(result, equals(4));
-    }, skip: true);
+    }, skip: false);
 
     test("large distance in off-by-one strand", () {
       final int result = hamming.distance("GGACGGATTCTG", "AGGACGGATTCT");
       expect(result, equals(9));
-    }, skip: true);
+    }, skip: false);
 
     test("disallow first strand longer", () {
       expect(() => hamming.distance("AATG", "AAA"), throwsArgumentError);
