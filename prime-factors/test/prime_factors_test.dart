@@ -24,17 +24,17 @@ void main() {
       test("cube of a prime", () {
         final List<int> result = primeFactors.factors(8);
         expect(result, equals([2, 2, 2]));
-      }, skip: true);
+      });
 
       test("product of primes and non-primes", () {
         final List<int> result = primeFactors.factors(12);
         expect(result, equals([2, 2, 3]));
-      }, skip: true);
+      });
 
       test("product of primes", () {
         final List<int> result = primeFactors.factors(901255);
         expect(result, equals([5, 17, 23, 461]));
-      }, skip: true);
+      });
 
       test("factors include a large prime", () {
         final List<int> result = primeFactors.factors(93819012551);
