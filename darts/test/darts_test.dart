@@ -38,33 +38,33 @@ void main() {
           () {
         final int result = darts.score(0, -1);
         expect(result, equals(10));
-      }, skip: true);
+      });
 
       test("A dart lands in the inner circle", () {
         final int result = darts.score(-0.1, -0.1);
         expect(result, equals(10));
-      }, skip: true);
+      });
 
       test(
           "A dart whose coordinates sum to > 1 but whose radius to origin is <= 1 is scored in the inner circle",
           () {
         final int result = darts.score(0.4, 0.8);
         expect(result, equals(10));
-      }, skip: true);
+      });
 
       test(
           "A dart whose coordinates sum to > 5 but whose radius to origin is <= 5 is scored in the middle circle",
           () {
         final int result = darts.score(2, 4);
         expect(result, equals(5));
-      }, skip: true);
+      });
 
       test(
           "A dart whose coordinates sum to > 10 but whose radius to origin is <= 10 is scored in the outer circle",
           () {
         final int result = darts.score(4, 8);
         expect(result, equals(1));
-      }, skip: true);
+      });
     });
   });
 }
