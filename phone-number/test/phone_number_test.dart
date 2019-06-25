@@ -20,12 +20,12 @@ void cleanUpTest() {
   test("cleans numbers with multiple spaces", () {
     final String result = phoneNumber.clean("223 456   7890   ");
     expect(result, equals("2234567890"));
-  }, skip: true);
+  });
 
   test("cleans numbers with dots", () {
     final String result = phoneNumber.clean("223.456.7890");
     expect(result, equals("2234567890"));
-  }, skip: true);
+  });
 }
 
 void numberLengthTest() {
