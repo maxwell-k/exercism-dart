@@ -47,12 +47,12 @@ void numberLengthTest() {
   test("valid when 11 digits and starting with 1 even with punctuation", () {
     final String result = phoneNumber.clean("+1 (223) 456-7890");
     expect(result, equals("2234567890"));
-  }, skip: true);
+  });
 
   test("invalid when more than 11 digits", () {
     final String result = phoneNumber.clean("321234567890");
     expect(result, equals(null));
-  }, skip: true);
+  });
 }
 
 void numbersOnlyTest() {
