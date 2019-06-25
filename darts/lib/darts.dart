@@ -1,3 +1,5 @@
 class Darts {
-  int score(double x, double y) => 0;
+  int score(double x, double y) {
+    return 0;
+  }
 }
