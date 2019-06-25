@@ -18,7 +18,7 @@
 | 10 | Hamming                    | ✓    |           |          |
 | 11 | Gigasecond                 | ✓    |           |          |
 | 12 | Raindrops                  | ✓    |           |          |
-| 13 | RNA Transcription          |      |           |          |
+| 13 | RNA Transcription          | ✓    |           |          |
 | 14 | Anagram                    |      |           |          |
 | 15 | Pascal's Triangle          |      |           |          |
 | 16 | ISBN Verifier              |      |           |          |
