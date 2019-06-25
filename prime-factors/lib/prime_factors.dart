@@ -1,3 +1,3 @@
 class PrimeFactors {
-  // Put your code here
+  List<int> factors(int input) => [];
 }
