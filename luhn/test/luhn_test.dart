@@ -43,7 +43,7 @@ void main() {
     test("valid number with an even number of digits", () {
       final bool result = luhn.valid("095 245 88");
       expect(result, equals(true));
-    }, skip: true);
+    });
 
     test("valid strings with a non-digit added at the end become invalid", () {
       final bool result = luhn.valid("059a");
