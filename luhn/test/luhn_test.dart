@@ -68,17 +68,17 @@ void main() {
     test("more than a single zero is valid", () {
       final bool result = luhn.valid("0000 0");
       expect(result, equals(true));
-    }, skip: true);
+    });
 
     test("input digit 9 is correctly converted to output digit 9", () {
       final bool result = luhn.valid("091");
       expect(result, equals(true));
-    }, skip: true);
+    });
 
     test("using ascii value for non-doubled non-digit isn't allowed", () {
       final bool result = luhn.valid("055b 444 285");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("using ascii value for doubled non-digit isn't allowed", () {
       final bool result = luhn.valid(":9");
