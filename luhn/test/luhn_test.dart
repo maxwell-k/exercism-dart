@@ -33,7 +33,7 @@ void main() {
     test("invalid Canadian SIN", () {
       final bool result = luhn.valid("055 444 286");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("invalid credit card", () {
       final bool result = luhn.valid("8273 1232 7352 0569");
