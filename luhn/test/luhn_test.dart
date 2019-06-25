@@ -58,12 +58,12 @@ void main() {
     test("valid strings with symbols included become invalid", () {
       final bool result = luhn.valid("055£ 444\$ 285");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("single zero with space is invalid", () {
       final bool result = luhn.valid(" 0");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("more than a single zero is valid", () {
       final bool result = luhn.valid("0000 0");

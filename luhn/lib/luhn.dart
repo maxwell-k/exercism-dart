@@ -1,6 +1,5 @@
 class Luhn {
   bool valid(String number) {
-    if (int.tryParse(number[number.length - 1]) == null) return false;
     var digits = List<int>();
     for (var i = 0; i < number.length; i++) {
       if (number[i] == ' ') continue;
