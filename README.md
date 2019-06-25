@@ -39,7 +39,7 @@
 | 9  | Prime Factors          | ✓        |       |           |
 | 10 | Darts                  | ✓        |       |           |
 | 11 | Pangram                | ✓        |       |           |
-| 12 | Luhn                   |          |       |           |
+| 12 | Luhn                   | ✓        |       |           |
 | 13 | Minesweeper            |          |       |           |
 | 14 | Collatz Conjecture     |          |       |           |
 | 15 | Nth Prime              |          |       |           |
