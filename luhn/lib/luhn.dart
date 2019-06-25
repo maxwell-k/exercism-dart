@@ -3,8 +3,8 @@ class Luhn {
     if (int.tryParse(number[number.length - 1]) == null) return false;
     var digits = List<int>();
     for (var i = 0; i < number.length; i++) {
-      int value = int.tryParse(number[i]);
-      if (value != null) digits.add(value);
+      if (number[i] == ' ') continue;
+      digits.add(int.parse(number[i]));
     }
     if (digits.length <= 1) return false;
     for (var i = digits.length - 2; i >= 0; i -= 2)
