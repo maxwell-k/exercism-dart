@@ -83,6 +83,6 @@ void main() {
     test("using ascii value for doubled non-digit isn't allowed", () {
       final bool result = luhn.valid(":9");
       expect(result, equals(false));
-    }, skip: true);
+    });
   });
 }
