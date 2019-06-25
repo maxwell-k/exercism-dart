@@ -4,7 +4,6 @@ class Luhn {
     List<int> digits = number.split("").map(int.parse).toList();
     for (var i = digits.length - 2; i >= 0; i -= 2)
       digits[i] = digits[i] * 2 % 9;
-    final total = digits.reduce((total, i) => total + i);
-    return total % 10 == 0;
+    return digits.reduce((total, i) => total + i) % 10 == 0;
   }
 }
