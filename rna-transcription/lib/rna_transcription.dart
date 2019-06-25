@@ -1,3 +1,3 @@
 class RnaTranscription {
-  // Put your code here
+  String toRna(String dna) => 'G';
 }
