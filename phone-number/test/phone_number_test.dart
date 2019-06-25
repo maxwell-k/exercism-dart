@@ -32,7 +32,7 @@ void numberLengthTest() {
   test("invalid when 9 digits", () {
     final String result = phoneNumber.clean("123456789");
     expect(result, equals(null));
-  }, skip: true);
+  });
 
   test("invalid when 11 digits and does not start with a 1", () {
     final String result = phoneNumber.clean("22234567890");
