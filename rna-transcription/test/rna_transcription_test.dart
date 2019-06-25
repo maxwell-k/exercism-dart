@@ -36,6 +36,6 @@ void main() {
 
     test('correctly handles partially invalid input', () {
       expect(() => rnaTranscription.toRna('ACGTXXXCTTAA'), throwsArgumentError);
-    }, skip: true);
+    });
   });
 }
