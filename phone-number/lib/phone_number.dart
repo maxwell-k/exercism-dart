@@ -1,3 +1,6 @@
 class PhoneNumber {
-  String clean(String input) => input.replaceAll(RegExp(r'[() -.]+'), '');
+  String clean(String input) {
+    String result = input.replaceAll(RegExp(r'[() -.]+'), '');
+    return result;
+  }
 }
