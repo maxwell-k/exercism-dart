@@ -48,7 +48,7 @@ void main() {
     test("valid strings with a non-digit added at the end become invalid", () {
       final bool result = luhn.valid("059a");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("valid strings with punctuation included become invalid", () {
       final bool result = luhn.valid("055-444-285");
