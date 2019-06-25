@@ -59,7 +59,7 @@ void numbersOnlyTest() {
   test("invalid with letters", () {
     final String result = phoneNumber.clean("123-abc-7890");
     expect(result, equals(null));
-  }, skip: true);
+  });
 
   test("invalid with punctuations", () {
     final String result = phoneNumber.clean("123-@:!-7890");
