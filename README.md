@@ -35,7 +35,7 @@
 | 5  | Reverse String         | ✓        |       |           |
 | 6  | Isogram                | ✓        |       |           |
 | 7  | Acronym                | ✓        |       |           |
-| 8  | Phone Number           |          |       |           |
+| 8  | Phone Number           | ✓        |       |           |
 | 9  | Prime Factors          |          |       |           |
 | 10 | Darts                  |          |       |           |
 | 11 | Pangram                |          |       |           |
