@@ -38,7 +38,7 @@ void main() {
     test("invalid credit card", () {
       final bool result = luhn.valid("8273 1232 7352 0569");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("valid number with an even number of digits", () {
       final bool result = luhn.valid("095 245 88");
