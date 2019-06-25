@@ -1,15 +1,16 @@
-final complement = const {
-  'G': 'C',
-  'C': 'G',
-  'T': 'A',
-  'A': 'U',
-};
-
 class RnaTranscription {
-  String toRna(String text) {
-    List<String> dna = text.split("");
-    if (!complement.keys.toSet().containsAll(dna.toSet()))
-      throw ArgumentError("Invalid input");
-    return dna.map((i) => complement[i]).join("");
-  }
+  String toRna(String text) => text.split("").map((c) {
+        switch (c) {
+          case 'G':
+            return 'C';
+          case 'C':
+            return 'G';
+          case 'T':
+            return 'A';
+          case 'A':
+            return 'U';
+          default:
+            throw ArgumentError("Invalid input");
+        }
+      }).join("");
 }
