@@ -2,7 +2,7 @@ class Luhn {
   bool valid(String number) {
     var digits = List<int>();
 
-    for (var i = 0; i < number.length; i++) {
+    for (int i = 0; i < number.length; i++) {
       if (number[i] == ' ') continue;
       int value = int.tryParse(number[i]);
       if (value == null) return false;
