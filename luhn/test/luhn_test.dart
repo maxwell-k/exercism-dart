@@ -28,7 +28,7 @@ void main() {
     test("a valid Canadian SIN", () {
       final bool result = luhn.valid("055 444 285");
       expect(result, equals(true));
-    }, skip: true);
+    });
 
     test("invalid Canadian SIN", () {
       final bool result = luhn.valid("055 444 286");
