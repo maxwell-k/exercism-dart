@@ -71,22 +71,22 @@ void areaCodeTests() {
   test("invalid if area code starts with 0", () {
     final String result = phoneNumber.clean("(023) 456-7890");
     expect(result, equals(null));
-  }, skip: true);
+  });
 
   test("invalid if area code starts with 1", () {
     final String result = phoneNumber.clean("(123) 456-7890");
     expect(result, equals(null));
-  }, skip: true);
+  });
 }
 
 void exchangeCodeTests() {
   test("invalid if exchange code starts with 0", () {
     final String result = phoneNumber.clean("(223) 056-7890");
     expect(result, equals(null));
-  }, skip: true);
+  });
 
   test("invalid if exchange code starts with 1", () {
     final String result = phoneNumber.clean("(223) 156-7890");
     expect(result, equals(null));
-  }, skip: true);
+  });
 }
