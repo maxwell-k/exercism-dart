@@ -36,7 +36,7 @@
 | 6  | Isogram                | ✓        |       |           |
 | 7  | Acronym                | ✓        |       |           |
 | 8  | Phone Number           | ✓        |       |           |
-| 9  | Prime Factors          |          |       |           |
+| 9  | Prime Factors          | ✓        |       |           |
 | 10 | Darts                  | ✓        |       |           |
 | 11 | Pangram                |          |       |           |
 | 12 | Luhn                   |          |       |           |
