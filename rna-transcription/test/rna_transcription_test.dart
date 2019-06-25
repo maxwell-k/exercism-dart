@@ -32,7 +32,7 @@ void main() {
 
     test('correctly handles completely invalid input', () {
       expect(() => rnaTranscription.toRna('XXX'), throwsArgumentError);
-    }, skip: true);
+    });
 
     test('correctly handles partially invalid input', () {
       expect(() => rnaTranscription.toRna('ACGTXXXCTTAA'), throwsArgumentError);

@@ -6,5 +6,10 @@ final complement = const {
 };
 
 class RnaTranscription {
-  String toRna(String dna) => dna.split("").map((i) => complement[i]).join("");
+  String toRna(String text) {
+    List<String> dna = text.split("");
+    if (!complement.keys.toSet().containsAll(dna.toSet()))
+      throw ArgumentError("Invalid input");
+    return dna.map((i) => complement[i]).join("");
+  }
 }
