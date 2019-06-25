@@ -23,7 +23,7 @@ void main() {
     test("a simple valid SIN that becomes invalid if reversed", () {
       final bool result = luhn.valid("59");
       expect(result, equals(true));
-    }, skip: true);
+    });
 
     test("a valid Canadian SIN", () {
       final bool result = luhn.valid("055 444 285");
