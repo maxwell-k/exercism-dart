@@ -39,7 +39,7 @@ void main() {
       test("factors include a large prime", () {
         final List<int> result = primeFactors.factors(93819012551);
         expect(result, equals([11, 9539, 894119]));
-      }, skip: true);
+      });
     });
   });
 }
