@@ -2,11 +2,13 @@ class PrimeFactors {
   List<int> factors(int input) {
     int wip = input;
     List<int> factors = [];
-    for (var i = 2; i <= input; i++) {
+    var i = 2;
+    while (i <= input) {
       if (wip % i == 0) {
         wip ~/= i;
         factors.add(i);
-      }
+      } else
+        i++;
     }
     return factors;
   }

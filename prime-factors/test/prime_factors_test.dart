@@ -19,7 +19,7 @@ void main() {
       test("square of a prime", () {
         final List<int> result = primeFactors.factors(9);
         expect(result, equals([3, 3]));
-      }, skip: true);
+      });
 
       test("cube of a prime", () {
         final List<int> result = primeFactors.factors(8);
