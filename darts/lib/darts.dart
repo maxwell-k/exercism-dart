@@ -1,3 +1,3 @@
 class Darts {
-  // Put your code here
+  int score(double x, double y) => 0;
 }
