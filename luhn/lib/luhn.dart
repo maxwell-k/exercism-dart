@@ -1,3 +1,5 @@
 class Luhn {
-  bool valid(String number) => false;
+  bool valid(String number) {
+    return false;
+  }
 }
