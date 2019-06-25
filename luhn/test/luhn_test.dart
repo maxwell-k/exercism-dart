@@ -18,7 +18,7 @@ void main() {
     test("a simple valid SIN that remains valid if reversed", () {
       final bool result = luhn.valid("059");
       expect(result, equals(true));
-    }, skip: true);
+    });
 
     test("a simple valid SIN that becomes invalid if reversed", () {
       final bool result = luhn.valid("59");
