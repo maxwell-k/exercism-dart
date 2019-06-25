@@ -13,7 +13,7 @@ void main() {
     test("a single zero is invalid", () {
       final bool result = luhn.valid("0");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("a simple valid SIN that remains valid if reversed", () {
       final bool result = luhn.valid("059");
