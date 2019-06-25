@@ -1,5 +1,6 @@
 class Luhn {
   bool valid(String number) {
-    return false;
+    if (number.length <= 1) return false;
+    throw UnimplementedError;
   }
 }
