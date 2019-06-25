@@ -1,3 +1,3 @@
 class Luhn {
-  // Put your code here
+  bool valid(String number) => false;
 }
