@@ -21,18 +21,18 @@ void main() {
       test("A dart lands in the outer circle", () {
         final int result = darts.score(4, 4);
         expect(result, equals(1));
-      }, skip: true);
+      });
 
       test("A dart lands right in the border between outer and middle circles",
           () {
         final int result = darts.score(5, 0);
         expect(result, equals(5));
-      }, skip: true);
+      });
 
       test("A dart lands in the middle circle", () {
         final int result = darts.score(0.8, -0.8);
         expect(result, equals(5));
-      }, skip: true);
+      });
 
       test("A dart lands right in the border between middle and inner circles",
           () {
