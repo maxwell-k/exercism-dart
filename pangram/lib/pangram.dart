@@ -1,3 +1,5 @@
 class Pangram {
-  // Put your code here
+  bool isPangram(String text) {
+    return false;
+  }
 }
