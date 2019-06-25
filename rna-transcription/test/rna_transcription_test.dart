@@ -13,17 +13,17 @@ void main() {
     test('transcribes guanine to cytosine', () {
       final String result = rnaTranscription.toRna('G');
       expect(result, equals('C'));
-    }, skip: true);
+    });
 
     test('transcribes adenine to uracil', () {
       final String result = rnaTranscription.toRna('A');
       expect(result, equals('U'));
-    }, skip: true);
+    });
 
     test('transcribes thymine to adenine', () {
       final String result = rnaTranscription.toRna('T');
       expect(result, equals('A'));
-    }, skip: true);
+    });
 
     test('transcribes all dna nucleotides to their rna complements', () {
       final String result = rnaTranscription.toRna('ACGTGGTCTTAA');
