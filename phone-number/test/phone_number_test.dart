@@ -64,7 +64,7 @@ void numbersOnlyTest() {
   test("invalid with punctuations", () {
     final String result = phoneNumber.clean("123-@:!-7890");
     expect(result, equals(null));
-  }, skip: true);
+  });
 }
 
 void areaCodeTests() {
