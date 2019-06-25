@@ -37,7 +37,7 @@ void numberLengthTest() {
   test("invalid when 11 digits and does not start with a 1", () {
     final String result = phoneNumber.clean("22234567890");
     expect(result, equals(null));
-  }, skip: true);
+  });
 
   test("valid when 11 digits and starting with 1", () {
     final String result = phoneNumber.clean("12234567890");
