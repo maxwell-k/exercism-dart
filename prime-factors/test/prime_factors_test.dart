@@ -14,7 +14,7 @@ void main() {
       test("prime number", () {
         final List<int> result = primeFactors.factors(2);
         expect(result, equals([2]));
-      }, skip: true);
+      });
 
       test("square of a prime", () {
         final List<int> result = primeFactors.factors(9);
