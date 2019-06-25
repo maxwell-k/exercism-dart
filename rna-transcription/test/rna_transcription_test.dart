@@ -28,7 +28,7 @@ void main() {
     test('transcribes all dna nucleotides to their rna complements', () {
       final String result = rnaTranscription.toRna('ACGTGGTCTTAA');
       expect(result, equals('UGCACCAGAAUU'));
-    }, skip: true);
+    });
 
     test('correctly handles completely invalid input', () {
       expect(() => rnaTranscription.toRna('XXX'), throwsArgumentError);

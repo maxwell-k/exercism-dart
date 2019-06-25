@@ -6,5 +6,5 @@ final complement = const {
 };
 
 class RnaTranscription {
-  String toRna(String dna) => complement[dna];
+  String toRna(String dna) => dna.split("").map((i) => complement[i]).join("");
 }
