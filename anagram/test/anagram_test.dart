@@ -70,7 +70,7 @@ void moreChallengingTests() {
     final List<String> result = anagram
         .findAnagrams("orchestra", ["cashregister", "Carthorse", "radishes"]);
     expect(result, equals(["Carthorse"]));
-  }, skip: true);
+  });
 }
 
 void edgeCaseTests() {
