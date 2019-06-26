@@ -71,21 +71,21 @@ void main() {
     test("empty isbn", () {
       final bool result = isValid("");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("input is 9 characters", () {
       final bool result = isValid("134456729");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("invalid characters are not ignored", () {
       final bool result = isValid("3132P34035");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("input is too long but contains a valid isbn", () {
       final bool result = isValid("98245726788");
       expect(result, equals(false));
-    }, skip: true);
+    });
   });
 }
