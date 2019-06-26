@@ -1,3 +1,3 @@
 class Anagram {
-  // Put your code here
+  List<String> findAnagrams(String word, List<String> candidates) => [];
 }
