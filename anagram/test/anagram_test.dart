@@ -77,12 +77,12 @@ void edgeCaseTests() {
   test("does not detect a anagram if the original word is repeated", () {
     final List<String> result = anagram.findAnagrams("go", ["go Go GO"]);
     expect(result, equals(<String>[]));
-  }, skip: true);
+  });
 
   test("anagrams must use all letters exactly once", () {
     final List<String> result = anagram.findAnagrams("tapper", ["patter"]);
     expect(result, equals(<String>[]));
-  }, skip: true);
+  });
 
   test("words are not anagrams of themselves (case-insensitive)", () {
     final List<String> result =
