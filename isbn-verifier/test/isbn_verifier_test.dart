@@ -21,7 +21,7 @@ void main() {
     test("check digit is a character other than X", () {
       final bool result = isValid("3-598-21507-A");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("invalid character in isbn", () {
       final bool result = isValid("3-598-P1581-X");
