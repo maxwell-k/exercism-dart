@@ -66,7 +66,7 @@ void main() {
     test("check digit of X should not be used for 0", () {
       final bool result = isValid("3-598-21515-X");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("empty isbn", () {
       final bool result = isValid("");
