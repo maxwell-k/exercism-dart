@@ -39,7 +39,7 @@ void slightlyLessSimpleTests() {
     final List<String> result = anagram
         .findAnagrams("listen", ["enlists", "google", "inlets", "banana"]);
     expect(result, equals(["inlets"]));
-  }, skip: true);
+  });
 
   test("detects three anagrams", () {
     final List<String> result = anagram.findAnagrams("allergy",
