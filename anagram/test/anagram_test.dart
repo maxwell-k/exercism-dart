@@ -64,7 +64,7 @@ void moreChallengingTests() {
     final List<String> result = anagram
         .findAnagrams("Orchestra", ["cashregister", "carthorse", "radishes"]);
     expect(result, equals(["carthorse"]));
-  }, skip: true);
+  });
 
   test("detects anagrams using case-insensitive possible matches", () {
     final List<String> result = anagram
