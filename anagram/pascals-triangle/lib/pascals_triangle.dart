@@ -5,6 +5,11 @@ class PascalsTriangle {
       return [
         [1]
       ];
+    if (number == 2)
+      return [
+        [1],
+        [1, 1],
+      ];
     throw UnimplementedError;
   }
 }
