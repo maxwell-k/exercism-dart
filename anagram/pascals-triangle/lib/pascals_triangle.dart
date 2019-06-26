@@ -9,8 +9,7 @@ class PascalsTriangle {
     List<List<int>> result = rows(number - 1);
     final last = result.last;
     result.add([1] +
-        Iterable<int>.generate(last.length - 1, (i) => last[i] + last[i + 1])
-            .toList() +
+        List<int>.generate(last.length - 1, (i) => last[i] + last[i + 1]) +
         [1]);
     return result;
   }
