@@ -1,3 +1,3 @@
-class IsbnVerifier {
-  // Put your code here
+bool isValid(String isbn) {
+  return true;
 }
