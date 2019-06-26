@@ -53,7 +53,7 @@ void main() {
               [1, 2, 1],
               [1, 3, 3, 1]
             ]));
-      }, skip: true);
+      });
 
       test("five rows", () {
         final List<List<int>> result = pascalsTriangle.rows(5);
