@@ -45,14 +45,14 @@ void slightlyLessSimpleTests() {
     final List<String> result = anagram.findAnagrams("allergy",
         ["gallery", "ballerina", "regally", "clergy", "largely", "leading"]);
     expect(result, equals(["gallery", "regally", "largely"]));
-  }, skip: true);
+  });
 }
 
 void moreChallengingTests() {
   test("does not detect non-anagrams with identical checksum", () {
     final List<String> result = anagram.findAnagrams("mass", ["last"]);
     expect(result, equals(<String>[]));
-  }, skip: true);
+  });
 
   test("detects anagrams case-insensitively", () {
     final List<String> result = anagram
