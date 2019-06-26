@@ -66,7 +66,7 @@ void main() {
               [1, 3, 3, 1],
               [1, 4, 6, 4, 1]
             ]));
-      }, skip: true);
+      });
 
       test("six rows", () {
         final List<List<int>> result = pascalsTriangle.rows(6);
@@ -80,7 +80,7 @@ void main() {
               [1, 4, 6, 4, 1],
               [1, 5, 10, 10, 5, 1]
             ]));
-      }, skip: true);
+      });
 
       test("ten rows", () {
         final List<List<int>> result = pascalsTriangle.rows(10);
@@ -98,7 +98,7 @@ void main() {
               [1, 8, 28, 56, 70, 56, 28, 8, 1],
               [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]
             ]));
-      }, skip: true);
+      });
     });
   });
 }
