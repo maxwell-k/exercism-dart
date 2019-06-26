@@ -5,11 +5,11 @@ class PascalsTriangle {
       return [
         [1]
       ];
-    if (number == 2)
-      return [
-        [1],
-        [1, 1],
-      ];
+    if (number == 2) {
+      List<List<int>> result = rows(1);
+      result.add([1, 1]);
+      return result;
+    }
     throw UnimplementedError;
   }
 }
