@@ -8,11 +8,8 @@ class PascalsTriangle {
     if (number == 0) return [];
     List<List<int>> result = rows(number - 1);
     if (number == 1) result.add([1]);
-    if (number == 2 || number == 3) result.add([1] + _above(result.last) + [1]);
-    if (number == 4)
-      result.add([1] +
-          [result.last[0] + result.last[1], result.last[1] + result.last[2]] +
-          [1]);
+    if (number == 2 || number == 3 || number == 4)
+      result.add([1] + _above(result.last) + [1]);
     return result;
   }
 }
