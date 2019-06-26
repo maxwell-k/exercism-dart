@@ -88,5 +88,5 @@ void edgeCaseTests() {
     final List<String> result =
         anagram.findAnagrams("BANANA", ["BANANA", "Banana", "banana"]);
     expect(result, equals(<String>[]));
-  }, skip: true);
+  });
 }
