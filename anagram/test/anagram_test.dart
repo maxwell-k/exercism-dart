@@ -33,7 +33,7 @@ void slightlyLessSimpleTests() {
   test("does not detect anagram subsets", () {
     final List<String> result = anagram.findAnagrams("good", ["dog", "goody"]);
     expect(result, equals(<String>[]));
-  }, skip: true);
+  });
 
   test("detects anagram", () {
     final List<String> result = anagram
