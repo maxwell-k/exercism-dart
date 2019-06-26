@@ -7,8 +7,9 @@ class PascalsTriangle {
   List<List<int>> rows(int number) {
     if (number == 0) return [];
     List<List<int>> result = rows(number - 1);
-    if (number == 1) result.add([1]);
-    if (number == 2 || number == 3 || number == 4)
+    if (number == 1)
+      result.add([1]);
+    else
       result.add([1] + _above(result.last) + [1]);
     return result;
   }
