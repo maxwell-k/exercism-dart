@@ -1,9 +1,13 @@
+import 'package:collection/collection.dart' show ListEquality;
+
+const listEquality = ListEquality<String>();
+
 class Anagram {
   List<String> findAnagrams(String word, List<String> candidates) {
-    final Set<String> letters = word.split("").toSet();
+    List<String> letters = word.split("")..sort();
     return candidates.where((candidate) {
-      Set<String> c = candidate.split("").toSet();
-      return c.length == letters.length && c.every(letters.contains);
+      List<String> candidate_letters = candidate.split("")..sort();
+      return listEquality.equals(letters, candidate_letters);
     }).toList();
   }
 }
