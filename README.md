@@ -20,7 +20,7 @@
 | 12 | Raindrops                  | ✓    |           |          |
 | 13 | RNA Transcription          | ✓    |           |          |
 | 14 | Anagram                    | ✓    |           |          |
-| 15 | Pascal's Triangle          |      |           |          |
+| 15 | Pascal's Triangle          | ✓    |           |          |
 | 16 | ISBN Verifier              |      |           |          |
 | 17 | Binary Search Tree         |      |           |          |
 
