@@ -26,42 +26,42 @@ void main() {
     test("invalid character in isbn", () {
       final bool result = isValid("3-598-P1581-X");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("X is only valid as a check digit", () {
       final bool result = isValid("3-598-2X507-9");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("valid isbn without separating dashes", () {
       final bool result = isValid("3598215088");
       expect(result, equals(true));
-    }, skip: true);
+    });
 
     test("isbn without separating dashes and X as check digit", () {
       final bool result = isValid("359821507X");
       expect(result, equals(true));
-    }, skip: true);
+    });
 
     test("isbn without check digit and dashes", () {
       final bool result = isValid("359821507");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("too long isbn and no dashes", () {
       final bool result = isValid("3598215078X");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("too short isbn", () {
       final bool result = isValid("00");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("isbn without check digit", () {
       final bool result = isValid("3-598-21507");
       expect(result, equals(false));
-    }, skip: true);
+    });
 
     test("check digit of X should not be used for 0", () {
       final bool result = isValid("3-598-21515-X");
