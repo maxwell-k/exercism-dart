@@ -1,9 +1,4 @@
 class PascalsTriangle {
-  List<int> _above(List<int> row) {
-    return Iterable<int>.generate(row.length - 1, (i) => row[i] + row[i + 1])
-        .toList();
-  }
-
   List<List<int>> rows(int number) {
     if (number == 0) return [];
     if (number == 1)
@@ -12,7 +7,11 @@ class PascalsTriangle {
       ];
 
     List<List<int>> result = rows(number - 1);
-    result.add([1] + _above(result.last) + [1]);
+    final last = result.last;
+    result.add([1] +
+        Iterable<int>.generate(last.length - 1, (i) => last[i] + last[i + 1])
+            .toList() +
+        [1]);
     return result;
   }
 }
