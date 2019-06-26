@@ -1,4 +1,4 @@
-import 'package:isbn_verifier/isbn_verifier.dart';
+import 'package:isbn_verifier/isbn_verifier.dart' show isValid;
 import 'package:test/test.dart';
 
 void main() {
