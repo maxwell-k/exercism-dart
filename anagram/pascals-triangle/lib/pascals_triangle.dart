@@ -10,6 +10,11 @@ class PascalsTriangle {
       result.add([1, 1]);
       return result;
     }
+    if (number == 3) {
+      List<List<int>> result = rows(2);
+      result.add([1, 2, 1]);
+      return result;
+    }
     throw UnimplementedError;
   }
 }

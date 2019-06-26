@@ -41,7 +41,7 @@ void main() {
               [1, 1],
               [1, 2, 1]
             ]));
-      }, skip: true);
+      });
 
       test("four rows", () {
         final List<List<int>> result = pascalsTriangle.rows(4);
