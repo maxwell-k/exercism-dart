@@ -1,5 +1,6 @@
 class Anagram {
   List<String> findAnagrams(String word, List<String> candidates) {
-    return [];
+    /* final Set<String> letters = word.split("").toSet(); */
+    return candidates.where((i) => false).toList();
   }
 }
