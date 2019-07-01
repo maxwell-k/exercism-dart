@@ -14,7 +14,7 @@ class Node<T extends Comparable<T>> {
       (left ? this.left : this.right).insert(data);
   }
 
-  List<T> get sortedData {
+  Iterable<T> get sortedData {
     var output = List<T>();
     output.addAll(this.left?.sortedData ?? []);
     output.add(this.data);
@@ -32,5 +32,5 @@ class BinarySearchTree {
 
   void insert(String data) => this.root.insert(data);
 
-  List<Comparable> get sortedData => this.root.sortedData;
+  Iterable<Comparable> get sortedData => this.root.sortedData;
 }
