@@ -7,17 +7,12 @@ class Node {
 
   void insert(String data) {
     bool left = data.compareTo(this.data) <= 0;
-    if (left) {
-      if (left && this.left == null)
-        this.left = Node(data);
-      else
-        this.left.insert(data);
-    } else {
-      if (!left && this.right == null)
-        this.right = Node(data);
-      else
-        this.right.insert(data);
-    }
+    if (left && this.left == null)
+      this.left = Node(data);
+    else if (!left && this.right == null)
+      this.right = Node(data);
+    else
+      (left ? this.left : this.right).insert(data);
   }
 }
 
