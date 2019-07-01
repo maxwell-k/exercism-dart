@@ -6,13 +6,14 @@ class Node {
   Node(String this.data);
 
   void insert(String data) {
-    if (data.compareTo(this.data) <= 0) {
-      if (this.left == null)
+    bool left = data.compareTo(this.data) <= 0;
+    if (left) {
+      if (left && this.left == null)
         this.left = Node(data);
       else
         this.left.insert(data);
     } else {
-      if (this.right == null)
+      if (!left && this.right == null)
         this.right = Node(data);
       else
         this.right.insert(data);
