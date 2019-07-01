@@ -18,7 +18,7 @@ class Node<T extends Comparable<T>> {
     var output = List<T>();
     if (this.left != null) output.addAll(this.left.sortedData);
     output.add(this.data);
-    if (this.right != null) output.addAll(this.right.sortedData);
+    output.addAll(this.right?.sortedData ?? []);
     return output;
   }
 }
