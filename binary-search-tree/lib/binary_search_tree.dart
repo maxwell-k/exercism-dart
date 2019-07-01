@@ -1,4 +1,4 @@
-class Node {
+class Node<T extends Comparable<T>> {
   String data;
   Node left, right;
 
@@ -7,9 +7,9 @@ class Node {
   void insert(String data) {
     bool left = data.compareTo(this.data) <= 0;
     if (left && this.left == null)
-      this.left = Node(data);
+      this.left = Node<T>(data);
     else if (!left && this.right == null)
-      this.right = Node(data);
+      this.right = Node<T>(data);
     else
       (left ? this.left : this.right).insert(data);
   }
@@ -27,7 +27,7 @@ class BinarySearchTree {
   Node root;
 
   BinarySearchTree(String data) {
-    this.root = Node(data);
+    this.root = Node<String>(data);
   }
 
   void insert(String data) => this.root.insert(data);
