@@ -16,9 +16,9 @@ class Node<T extends Comparable<T>> {
 
   Iterable<T> get sortedData {
     var output = List<T>();
-    output.addAll(this.left?.sortedData ?? []);
-    output.add(this.data);
-    output.addAll(this.right?.sortedData ?? []);
+    output.addAll(left?.sortedData ?? []);
+    output.add(data);
+    output.addAll(right?.sortedData ?? []);
     return output;
   }
 }
