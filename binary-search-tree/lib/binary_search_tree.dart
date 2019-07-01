@@ -1,7 +1,6 @@
 class Node {
   String data;
-  Node left;
-  Node right;
+  Node left, right;
 
   Node(String this.data);
 
@@ -33,7 +32,5 @@ class BinarySearchTree {
 
   void insert(String data) => this.root.insert(data);
 
-  List<String> get sortedData {
-    return this.root.sortedData;
-  }
+  List<String> get sortedData => this.root.sortedData;
 }
