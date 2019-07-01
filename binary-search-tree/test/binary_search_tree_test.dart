@@ -57,7 +57,7 @@ void main() {
         final bst = new BinarySearchTree('2');
 
         expect(bst.sortedData, equals(['2']));
-      }, skip: true);
+      });
 
       test('can sort if second number is smaller than first', () {
         final bst = new BinarySearchTree('2')..insert('1');
