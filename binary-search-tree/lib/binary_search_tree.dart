@@ -1,10 +1,10 @@
 class Node<T extends Comparable<T>> {
-  final String data;
+  final T data;
   Node<T> left, right;
 
-  Node(String this.data);
+  Node(T this.data);
 
-  void insert(String data) {
+  void insert(T data) {
     bool left = data.compareTo(this.data) <= 0;
     if (left && this.left == null)
       this.left = Node<T>(data);
@@ -14,8 +14,8 @@ class Node<T extends Comparable<T>> {
       (left ? this.left : this.right).insert(data);
   }
 
-  List<String> get sortedData {
-    var output = List<String>();
+  List<T> get sortedData {
+    var output = List<T>();
     if (this.left != null) output.addAll(this.left.sortedData);
     output.add(this.data);
     if (this.right != null) output.addAll(this.right.sortedData);
@@ -32,5 +32,5 @@ class BinarySearchTree {
 
   void insert(String data) => this.root.insert(data);
 
-  List<String> get sortedData => this.root.sortedData;
+  List<Comparable> get sortedData => this.root.sortedData;
 }
