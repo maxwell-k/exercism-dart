@@ -26,6 +26,6 @@ class BinarySearchTree {
   void insert(String data) => this.root.insert(data);
 
   List<String> get sortedData {
-    return ['2'];
+    return [this.root.data];
   }
 }
