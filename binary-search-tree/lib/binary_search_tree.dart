@@ -4,14 +4,14 @@ class Node<T extends Comparable<T>> {
 
   Node(T this.data);
 
-  void insert(T data) {
-    bool left = data.compareTo(this.data) <= 0;
+  void insert(T value) {
+    bool left = value.compareTo(data) <= 0;
     if (left && this.left == null)
-      this.left = Node<T>(data);
+      this.left = Node<T>(value);
     else if (!left && this.right == null)
-      this.right = Node<T>(data);
+      this.right = Node<T>(value);
     else
-      (left ? this.left : this.right).insert(data);
+      (left ? this.left : this.right).insert(value);
   }
 
   Iterable<T> get sortedData sync* {
