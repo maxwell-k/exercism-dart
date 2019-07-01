@@ -4,6 +4,13 @@ class Node {
   Node right;
 
   Node(String this.data);
+
+  void insert(String data) {
+    if (data.compareTo(this.data) <= 0)
+      this.left = Node(data);
+    else
+      this.right = Node(data);
+  }
 }
 
 class BinarySearchTree {
@@ -13,10 +20,7 @@ class BinarySearchTree {
     this.root = Node(data);
   }
   void insert(String data) {
-    if (data.compareTo(this.root.data) <= 0)
-      this.root.left = Node(data);
-    else
-      this.root.right = Node(data);
+    this.root.insert(data);
   }
 
   List<String> get sortedData => [];
