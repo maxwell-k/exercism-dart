@@ -16,7 +16,7 @@ class BinarySearchTree {
     if (data.compareTo(this.root.data) <= 0)
       this.root.left = Node(data);
     else
-      throw UnimplementedError;
+      this.root.right = Node(data);
   }
 
   List<String> get sortedData => [];
