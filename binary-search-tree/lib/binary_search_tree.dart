@@ -16,7 +16,7 @@ class Node {
   }
 
   List<String> get sortedData {
-    List<String> output = List<String>();
+    var output = List<String>();
     if (this.left != null) output.addAll(this.left.sortedData);
     output.add(this.data);
     if (this.right != null) output.addAll(this.right.sortedData);
