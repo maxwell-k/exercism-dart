@@ -14,12 +14,11 @@ class Node<T extends Comparable<T>> {
       (left ? this.left : this.right).insert(data);
   }
 
-  Iterable<T> get sortedData {
-    var output = List<T>();
-    output.addAll(left?.sortedData ?? []);
-    output.add(data);
-    output.addAll(right?.sortedData ?? []);
-    return output;
+  Iterable<T> get sortedData sync* {
+    if (data == null) return;
+    for (var t in left?.sortedData ?? <T>[]) yield t;
+    yield data;
+    for (var t in right?.sortedData ?? <T>[]) yield t;
   }
 }
 
