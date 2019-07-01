@@ -63,7 +63,7 @@ void main() {
         final bst = new BinarySearchTree('2')..insert('1');
 
         expect(bst.sortedData, equals(['1', '2']));
-      }, skip: true);
+      });
 
       test('can sort if second number is same as first', () {
         final bst = new BinarySearchTree('2')..insert('2');

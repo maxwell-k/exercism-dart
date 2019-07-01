@@ -14,6 +14,14 @@ class Node {
     else
       (left ? this.left : this.right).insert(data);
   }
+
+  List<String> get sortedData {
+    List<String> output = List<String>();
+    if (this.left != null) output.addAll(this.left.sortedData);
+    output.add(this.data);
+    if (this.right != null) output.addAll(this.right.sortedData);
+    return output;
+  }
 }
 
 class BinarySearchTree {
@@ -26,6 +34,6 @@ class BinarySearchTree {
   void insert(String data) => this.root.insert(data);
 
   List<String> get sortedData {
-    return [this.root.data];
+    return this.root.sortedData;
   }
 }
