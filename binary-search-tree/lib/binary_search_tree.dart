@@ -12,8 +12,11 @@ class BinarySearchTree {
   BinarySearchTree(String data) {
     this.root = Node(data);
   }
-  void insert(String Data) {
-    throw UnimplementedError;
+  void insert(String data) {
+    if (data.compareTo(this.root.data) <= 0)
+      this.root.left = Node(data);
+    else
+      throw UnimplementedError;
   }
 
   List<String> get sortedData => [];
