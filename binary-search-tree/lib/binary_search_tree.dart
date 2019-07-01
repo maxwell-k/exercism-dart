@@ -1,6 +1,6 @@
 class Node<T extends Comparable<T>> {
-  String data;
-  Node left, right;
+  final String data;
+  Node<T> left, right;
 
   Node(String this.data);
 
