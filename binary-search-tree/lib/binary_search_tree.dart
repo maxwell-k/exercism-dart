@@ -19,9 +19,8 @@ class BinarySearchTree {
   BinarySearchTree(String data) {
     this.root = Node(data);
   }
-  void insert(String data) {
-    this.root.insert(data);
-  }
+
+  void insert(String data) => this.root.insert(data);
 
   List<String> get sortedData => [];
 }
