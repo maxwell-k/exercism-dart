@@ -29,7 +29,7 @@ void main() {
 
         expect(bst.root.data, equals('4'));
         expect(bst.root.right.data, equals('5'));
-      }, skip: true);
+      }, skip: false);
 
       test('can create complex tree', () {
         final bst = new BinarySearchTree('4')
@@ -49,7 +49,7 @@ void main() {
         expect(bst.root.right.data, equals('6'));
         expect(bst.root.right.left.data, equals('5'));
         expect(bst.root.right.right.data, equals('7'));
-      }, skip: true);
+      }, skip: false);
     });
 
     group('can sort data', () {
