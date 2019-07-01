@@ -69,7 +69,7 @@ void main() {
         final bst = new BinarySearchTree('2')..insert('2');
 
         expect(bst.sortedData, equals(['2', '2']));
-      }, skip: true);
+      });
 
       test('can sort if second number is greater than first', () {
         final bst = new BinarySearchTree('2')..insert('3');
