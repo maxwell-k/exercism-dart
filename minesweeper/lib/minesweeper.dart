@@ -1,9 +1,9 @@
 class Minesweeper {
-  List<String> input;
+  final List<String> input;
 
   List<String> get annotated {
     return this.input;
   }
 
-  Minesweeper([List<String> this.input]);
+  const Minesweeper([List<String> this.input]);
 }
