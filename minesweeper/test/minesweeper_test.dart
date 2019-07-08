@@ -18,7 +18,7 @@ void simpleTestCases() {
   test("no columns", () {
     List<String> result = new Minesweeper([""]).annotated;
     expect(result, equals([""]));
-  }, skip: true);
+  });
 
   test("no mines", () {
     List<String> result = new Minesweeper(["   ", "   ", "   "]).annotated;
