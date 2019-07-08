@@ -5,7 +5,9 @@ class Minesweeper {
   int get columns => this.rows > 0 ? input[0].length : 0;
 
   List<String> get annotated => Iterable<String>.generate(this.rows, (i) {
-        return this.input[i];
+        var buffer = StringBuffer();
+        buffer.write(input[i]);
+        return buffer.toString();
       }).toList();
 
   const Minesweeper([List<String> this.input]);
