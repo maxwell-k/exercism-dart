@@ -1,3 +1,5 @@
+bool mine(String input) => input == '*';
+
 class Minesweeper {
   final List<String> input;
 
@@ -7,11 +9,14 @@ class Minesweeper {
   // List<Point> neighbours(int x, int y) {
   //   return [];
   // }
+  String value(int x, int y) {
+    return this.input[y][x];
+  }
 
   List<String> get annotated => Iterable<String>.generate(this.rows, (y) {
         var buffer = StringBuffer();
         Iterable<int>.generate(this.columns).forEach((x) {
-          buffer.write(this.input[y][x]);
+          buffer.write(value(x, y));
         });
         return buffer.toString();
       }).toList();
