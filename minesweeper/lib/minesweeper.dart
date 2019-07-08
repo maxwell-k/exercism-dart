@@ -4,9 +4,10 @@ class Minesweeper {
   int get rows => this.input?.length ?? 0;
   int get columns => this.rows > 0 ? input[0].length : 0;
 
-  List<String> get annotated => Iterable<String>.generate(this.rows, (i) {
+  List<String> get annotated => Iterable<String>.generate(this.rows, (y) {
         var buffer = StringBuffer();
-        buffer.write(input[i]);
+        Iterable<int>.generate(this.columns)
+            .forEach((x) => buffer.write(this.input[y][x]));
         return buffer.toString();
       }).toList();
 
