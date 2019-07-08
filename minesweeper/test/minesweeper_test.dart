@@ -1,6 +1,8 @@
 import 'package:minesweeper/minesweeper.dart';
 import 'package:test/test.dart';
 
+final myMineSweeper = new Minesweeper();
+
 void main() {
   group("MineSweeper: Simple cases - ", simpleTestCases);
   group("MineSweeper: Normal cases - ", normalTestCases);
