@@ -1,4 +1,9 @@
-# Core exercises
+# Solutions for the dart exercism track
+
+Also a chance to try out `test && commit || revert` as [explained by Kent
+Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864).
+
+## Core exercises
 
 | #. | Title                      | Done | Submitted | Reviewed |
 | -- | -------------------------- | ---- | --------- | -------- |
@@ -20,7 +25,7 @@
 | 16 | ISBN Verifier              | ✓    |           |          |
 | 17 | Binary Search Tree         | ✓    |           |          |
 
-# Side exercises
+## Side exercises
 
 | #. | Title                  | Unlocked | Done  | Submitted |
 | -- | ---------------------- | -------- | ----  | --------- |
