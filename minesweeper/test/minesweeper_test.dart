@@ -28,7 +28,7 @@ void simpleTestCases() {
   test("board with only mines", () {
     List<String> result = new Minesweeper(["***", "***", "***"]).annotated;
     expect(result, equals(["***", "***", "***"]));
-  }, skip: true);
+  });
 }
 
 void normalTestCases() {
