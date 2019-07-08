@@ -24,12 +24,12 @@ class Minesweeper {
 
   String value(int x, int y) {
     if (mine(this.input[y][x])) return this.input[y][x];
-    final count = offsets.where((n) {
-      if (x + n.x < 0 || x + n.x >= columns || y + n.y < 0 || y + n.y >= rows)
+    final count = offsets.where((o) {
+      if (x + o.x < 0 || x + o.x >= columns || y + o.y < 0 || y + o.y >= rows)
         return false;
-      return mine(this.input[y + n.y][x + n.x]);
+      return mine(this.input[y + o.y][x + o.x]);
     }).length;
-    return count == 0 ? ' ' : count.toString();
+    return count > 0 ? count.toString() : this.input[y][x];
   }
 
   List<String> get annotated => Iterable<String>.generate(
