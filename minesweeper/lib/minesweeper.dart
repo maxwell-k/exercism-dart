@@ -6,8 +6,9 @@ class Minesweeper {
 
   List<String> get annotated => Iterable<String>.generate(this.rows, (y) {
         var buffer = StringBuffer();
-        Iterable<int>.generate(this.columns)
-            .forEach((x) => buffer.write(this.input[y][x]));
+        Iterable<int>.generate(this.columns).forEach((x) {
+          buffer.write(this.input[y][x]);
+        });
         return buffer.toString();
       }).toList();
 
