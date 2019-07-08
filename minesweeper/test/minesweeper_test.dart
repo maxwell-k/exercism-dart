@@ -35,7 +35,7 @@ void normalTestCases() {
   test("mine surrounded by spaces", () {
     List<String> result = new Minesweeper(["   ", " * ", "   "]).annotated;
     expect(result, equals(["111", "1*1", "111"]));
-  }, skip: true);
+  });
 
   test("space surrounded by mines", () {
     List<String> result = new Minesweeper(["***", "* *", "***"]).annotated;
