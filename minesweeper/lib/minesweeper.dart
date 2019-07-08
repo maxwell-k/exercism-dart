@@ -4,6 +4,10 @@ class Minesweeper {
   int get rows => this.input?.length ?? 0;
   int get columns => this.rows > 0 ? input[0].length : 0;
 
+  // List<Point> neighbours(int x, int y) {
+  //   return [];
+  // }
+
   List<String> get annotated => Iterable<String>.generate(this.rows, (y) {
         var buffer = StringBuffer();
         Iterable<int>.generate(this.columns).forEach((x) {
