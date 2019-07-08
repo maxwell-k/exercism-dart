@@ -24,16 +24,20 @@ class Minesweeper {
 
   String value(int x, int y) {
     if (mine(this.input[y][x])) return this.input[y][x];
-    return this.input[y][x];
+    final count = offsets.where((n) {
+      if (x + n.x < 0) return false;
+      if (x + n.x >= columns) return false;
+      if (y + n.y < 0) return false;
+      if (y + n.y >= rows) return false;
+      return mine(this.input[x + n.x][y + n.y]);
+    }).length;
+    return count == 0 ? ' ' : count.toString();
   }
 
-  List<String> get annotated => Iterable<String>.generate(this.rows, (y) {
-        var buffer = StringBuffer();
-        Iterable<int>.generate(this.columns).forEach((x) {
-          buffer.write(value(x, y));
-        });
-        return buffer.toString();
-      }).toList();
+  List<String> get annotated => Iterable<String>.generate(
+      this.rows,
+      (y) => Iterable<String>.generate(this.columns, (x) => value(x, y))
+          .join('')).toList();
 
   const Minesweeper([List<String> this.input]);
 }
