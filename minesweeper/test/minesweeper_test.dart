@@ -69,12 +69,12 @@ void advancedTestCases() {
         new Minesweeper(["  *  ", "  *  ", "*****", "  *  ", "  *  "])
             .annotated;
     expect(result, equals([" 2*2 ", "25*52", "*****", "25*52", " 2*2 "]));
-  }, skip: true);
+  });
 
   test("large board", () {
     List<String> result = new Minesweeper(
         [" *  * ", "  *   ", "    * ", "   * *", " *  * ", "      "]).annotated;
     expect(result,
         equals(["1*22*1", "12*322", " 123*2", "112*4*", "1*22*2", "111111"]));
-  }, skip: true);
+  });
 }
