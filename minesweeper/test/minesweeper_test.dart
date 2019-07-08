@@ -47,7 +47,7 @@ void advancedTestCases() {
   test("horizontal line", () {
     List<String> result = new Minesweeper([" * * "]).annotated;
     expect(result, equals(["1*2*1"]));
-  }, skip: true);
+  });
 
   test("horizontal line, mines at edges", () {
     List<String> result = new Minesweeper(["*   *"]).annotated;

@@ -27,7 +27,7 @@ class Minesweeper {
     final count = offsets.where((n) {
       if (x + n.x < 0 || x + n.x >= columns || y + n.y < 0 || y + n.y >= rows)
         return false;
-      return mine(this.input[x + n.x][y + n.y]);
+      return mine(this.input[y + n.y][x + n.x]);
     }).length;
     return count == 0 ? ' ' : count.toString();
   }
