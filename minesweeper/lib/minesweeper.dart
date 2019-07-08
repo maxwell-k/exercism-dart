@@ -4,7 +4,8 @@ class Minesweeper {
   int get rows => this.input?.length ?? 0;
   int get columns => this.rows > 0 ? input[0].length : 0;
 
-  List<String> get annotated => this.input.map((i) => i).toList();
+  List<String> get annotated =>
+      Iterable<String>.generate(this.rows, (i) => this.input[i]).toList();
 
   const Minesweeper([List<String> this.input]);
 }
