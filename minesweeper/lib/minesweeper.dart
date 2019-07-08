@@ -1,3 +1,7 @@
 class Minesweeper {
-  // Put your code here.
+  List<String> annotated;
+
+  Minesweeper([List<String> input]) {
+    this.annotated = input ?? [];
+  }
 }
