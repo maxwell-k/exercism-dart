@@ -49,7 +49,7 @@ into this:
 *Leave a space, in case there are no nearby mines.
 
 ## Hints
-- You can use 2D Arrays (i.e. 2 dimentional lists in dart).
+- You can use 2D Arrays (i.e. 2 dimensional lists in dart).
 - You can also utilize Maps.
 - You can create your own 1 or more custom data types (class).
 - To get an idea of how to create Minesweeper, check out [this](https://www.youtube.com/watch?v=LFU5ZlrR21E) video.
