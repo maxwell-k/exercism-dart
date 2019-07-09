@@ -225,17 +225,17 @@ void main() {
       test('no allergies', () {
         final List<Object> result = allergies.list(0);
         expect(result, equals(<String>[]));
-      }, skip: true);
+      });
 
       test('just eggs', () {
         final List<String> result = allergies.list(1);
         expect(result, equals(['eggs']));
-      }, skip: true);
+      });
 
       test('just peanuts', () {
         final List<String> result = allergies.list(2);
         expect(result, equals(['peanuts']));
-      }, skip: true);
+      });
 
       test('just strawberries', () {
         final List<String> result = allergies.list(8);
