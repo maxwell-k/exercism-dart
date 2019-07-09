@@ -48,7 +48,7 @@ Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864).
 | 14 | Collatz Conjecture     |          | ✓     |           |
 | 15 | Nth Prime              |          | ✓     |           |
 | 16 | Allergies              |          | ✓     |           |
-| 17 | Triangle               |          |       |           |
+| 17 | Triangle               |          | ✓     |           |
 | 18 | Secret Handshake       |          |       |           |
 
 <!-- vim: set filetype=markdown nospell : -->
