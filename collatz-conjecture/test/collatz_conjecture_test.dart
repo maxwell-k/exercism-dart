@@ -28,7 +28,7 @@ void main() {
     test('even and odd steps', () {
       final int result = collatzConjecture.steps(12);
       expect(result, equals(9));
-    }, skip: true);
+    });
 
     test('large number of even and odd steps', () {
       final int result = collatzConjecture.steps(1000000);
