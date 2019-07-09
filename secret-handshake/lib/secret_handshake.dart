@@ -1,3 +1,3 @@
 class SecretHandshake {
-  // Put your code here
+  List<String> commands(int message) => ['wink'];
 }
