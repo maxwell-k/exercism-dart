@@ -1,5 +1,8 @@
 # Solutions for the dart exercism track
 
+Exercises taken from <https://exercism.io/> or
+<https://github.com/exercism/dart>.
+
 Also a chance to try out `test && commit || revert` as [explained by Kent
 Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864).
 
