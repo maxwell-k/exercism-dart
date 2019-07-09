@@ -1,5 +1,8 @@
 class NthPrime {
-  int prime(int n) => primeNumbers().take(n).last;
+  int prime(int n) {
+    if (n < 1) throw ArgumentError('There is no zeroth prime');
+    return primeNumbers().take(n).last;
+  }
 }
 
 bool isPrime(int x) => Iterable<int>.generate(x)

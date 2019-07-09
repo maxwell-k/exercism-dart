@@ -31,6 +31,6 @@ void main() {
 
     test('there is no zeroth prime', () {
       expect(() => nthPrime.prime(0), throwsA(noZerothPrime));
-    }, skip: true);
+    });
   });
 }
