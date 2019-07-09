@@ -105,78 +105,78 @@ void main() {
       test('allergic to something, but not strawberries', () {
         final bool result = allergies.allergicTo('strawberries', 20);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic to everything', () {
         final bool result = allergies.allergicTo('strawberries', 255);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
 
     group('testing for tomatoes allergy', () {
       test('not allergic to anything', () {
         final bool result = allergies.allergicTo('tomatoes', 0);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic only to tomatoes', () {
         final bool result = allergies.allergicTo('tomatoes', 16);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to tomatoes and something else', () {
         final bool result = allergies.allergicTo('tomatoes', 56);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to something, but not tomatoes', () {
         final bool result = allergies.allergicTo('tomatoes', 40);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic to everything', () {
         final bool result = allergies.allergicTo('tomatoes', 255);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
 
     group('testing for chocolate allergy', () {
       test('not allergic to anything', () {
         final bool result = allergies.allergicTo('chocolate', 0);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic only to chocolate', () {
         final bool result = allergies.allergicTo('chocolate', 32);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to chocolate and something else', () {
         final bool result = allergies.allergicTo('chocolate', 112);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to something, but not chocolate', () {
         final bool result = allergies.allergicTo('chocolate', 80);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic to everything', () {
         final bool result = allergies.allergicTo('chocolate', 255);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
 
     group('testing for pollen allergy', () {
       test('not allergic to anything', () {
         final bool result = allergies.allergicTo('pollen', 0);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic only to pollen', () {
         final bool result = allergies.allergicTo('pollen', 64);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to pollen and something else', () {
         final bool result = allergies.allergicTo('pollen', 224);
