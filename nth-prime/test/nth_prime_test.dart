@@ -12,7 +12,7 @@ void main() {
     test('first prime', () {
       final int result = nthPrime.prime(1);
       expect(result, equals(2));
-    }, skip: false);
+    });
 
     test('second prime', () {
       final int result = nthPrime.prime(2);
