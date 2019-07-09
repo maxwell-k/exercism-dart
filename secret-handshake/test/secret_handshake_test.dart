@@ -14,7 +14,7 @@ void main() {
       test('double blink for 10', () {
         final List<String> result = secretHandshake.commands(2);
         expect(result, equals(['double blink']));
-      }, skip: true);
+      });
 
       test('close your eyes for 100', () {
         final List<String> result = secretHandshake.commands(4);
