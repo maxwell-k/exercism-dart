@@ -24,12 +24,12 @@ void main() {
       test('all zero sides is not a triangle', () {
         final bool result = triangle.equilateral(0, 0, 0);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('sides may be floats', () {
         final bool result = triangle.equilateral(0.5, 0.5, 0.5);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
 
     group('isosceles triangle', () {
