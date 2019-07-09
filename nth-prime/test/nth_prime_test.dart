@@ -17,7 +17,7 @@ void main() {
     test('second prime', () {
       final int result = nthPrime.prime(2);
       expect(result, equals(3));
-    }, skip: true);
+    });
 
     test('sixth prime', () {
       final int result = nthPrime.prime(6);
