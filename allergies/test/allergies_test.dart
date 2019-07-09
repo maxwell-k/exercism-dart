@@ -29,7 +29,7 @@ void main() {
       test('allergic to everything', () {
         final bool result = allergies.allergicTo('eggs', 255);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
 
     group('testing for peanuts allergy', () {
