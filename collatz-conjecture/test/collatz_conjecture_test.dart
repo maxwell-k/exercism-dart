@@ -9,7 +9,9 @@ import 'package:test/test.dart';
 void main() {
   final collatzConjecture = new CollatzConjecture();
   final onlyPositive = predicate(
-      (ArgumentError e) => e is ArgumentError && e.message == 'Only positive numbers are allowed',
+      (ArgumentError e) =>
+          e is ArgumentError &&
+          e.message == 'Only positive numbers are allowed',
       'an ArgumentError with the message "Only positive numbers are allowed"');
 
   group('CollatzConjecture', () {
@@ -21,7 +23,7 @@ void main() {
     test('divide if even', () {
       final int result = collatzConjecture.steps(16);
       expect(result, equals(4));
-    }, skip: true);
+    });
 
     test('even and odd steps', () {
       final int result = collatzConjecture.steps(12);
