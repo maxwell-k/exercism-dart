@@ -33,7 +33,7 @@ void main() {
     test('large number of even and odd steps', () {
       final int result = collatzConjecture.steps(1000000);
       expect(result, equals(152));
-    }, skip: true);
+    });
 
     test('zero is an error', () {
       expect(() => collatzConjecture.steps(0), throwsA(onlyPositive));
