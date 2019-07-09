@@ -34,34 +34,34 @@ void main() {
       test('reverse two actions', () {
         final List<String> result = secretHandshake.commands(19);
         expect(result, equals(['double blink', 'wink']));
-      }, skip: true);
+      });
 
       test('reversing one action gives the same action', () {
         final List<String> result = secretHandshake.commands(24);
         expect(result, equals(['jump']));
-      }, skip: true);
+      });
 
       test('reversing no actions still gives no actions', () {
         final List<String> result = secretHandshake.commands(16);
         expect(result, equals(<String>[]));
-      }, skip: true);
+      });
 
       test('all possible actions', () {
         final List<String> result = secretHandshake.commands(15);
         expect(result,
             equals(['wink', 'double blink', 'close your eyes', 'jump']));
-      }, skip: true);
+      });
 
       test('reverse all possible actions', () {
         final List<String> result = secretHandshake.commands(31);
         expect(result,
             equals(['jump', 'close your eyes', 'double blink', 'wink']));
-      }, skip: true);
+      });
 
       test('do nothing for zero', () {
         final List<String> result = secretHandshake.commands(0);
         expect(result, equals(<String>[]));
-      }, skip: true);
+      });
     });
   });
 }

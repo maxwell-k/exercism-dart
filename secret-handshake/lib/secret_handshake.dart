@@ -5,9 +5,9 @@ class SecretHandshake {
     if (message & 2 > 0) output.add('double blink');
     if (message & 4 > 0) output.add('close your eyes');
     if (message & 8 > 0) output.add('jump');
-    /*
-    10000 = Reverse the order of the operations in the secret handshake. / 16
-    */
-    return output;
+    if (message & 16 > 0)
+      return output.reversed.toList();
+    else
+      return output;
   }
 }
