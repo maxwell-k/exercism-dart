@@ -88,22 +88,22 @@ void main() {
       test('all sides are equal', () {
         final bool result = triangle.scalene(4, 4, 4);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('two sides are equal', () {
         final bool result = triangle.scalene(4, 4, 3);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('may not violate triangle inequality', () {
         final bool result = triangle.scalene(7, 3, 2);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('sides may be floats', () {
         final bool result = triangle.scalene(0.5, 0.4, 0.6);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
   });
 }

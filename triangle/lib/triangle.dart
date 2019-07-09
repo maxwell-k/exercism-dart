@@ -5,5 +5,6 @@ class Triangle {
       _inequality(a, b, c) && {a, b, c}.length == 1 && a != 0;
   bool isosceles(num a, num b, num c) =>
       _inequality(a, b, c) && {a, b, c}.length <= 2;
-  bool scalene(num a, num b, num c) => true;
+  bool scalene(num a, num b, num c) =>
+      _inequality(a, b, c) && {a, b, c}.length == 3;
 }
