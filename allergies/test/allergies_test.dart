@@ -56,7 +56,7 @@ void main() {
       test('allergic to everything', () {
         final bool result = allergies.allergicTo('peanuts', 255);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
 
     group('testing for shellfish allergy', () {

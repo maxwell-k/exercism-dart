@@ -13,9 +13,8 @@ class Allergies {
   List<String> items =
       Item.values.map((i) => i.toString().split('.').last).toList();
 
-  bool allergicTo(String item, int score) {
-    return (score >> this.items.indexOf(item)) % 2 == 1;
-  }
+  bool allergicTo(String item, int score) =>
+      (score >> this.items.indexOf(item)) % 2 == 1;
 
   List<String> list(int score) => List<String>();
 }
