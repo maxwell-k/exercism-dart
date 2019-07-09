@@ -17,6 +17,9 @@ class Allergies {
       (score >> this.allergies.indexOf(item)) % 2 == 1;
 
   List<String> list(int score) {
-    return List<String>();
+    return Allergy.values
+        .where((i) => score >> i.index % 2 == 1)
+        .map((i) => i.toString().split('.').last)
+        .toList();
   }
 }
