@@ -4,8 +4,8 @@ class SecretHandshake {
   List<String> commands(int message) {
     var output = List<String>();
     for (int i = 0; i < _events.length; i++)
-      if (message & 1 << i > 0) output.add(_events[i]);
-    return (message & 1 << _events.length > 0)
+      if (message >> i & 1 == 1) output.add(_events[i]);
+    return (message >> _events.length & 1 == 1)
         ? output.reversed.toList()
         : output;
   }
