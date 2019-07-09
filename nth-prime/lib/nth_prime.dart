@@ -11,10 +11,8 @@ bool isPrime(int x) => Iterable<int>.generate(x)
     .isEmpty;
 
 Iterable<int> primeNumbers() sync* {
-  int k = 2;
   // ignore: literal_only_boolean_expressions
-  while (true) {
+  for (int k = 2; true; k++) {
     if (isPrime(k)) yield k;
-    k++;
   }
 }
