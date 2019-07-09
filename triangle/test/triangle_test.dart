@@ -46,17 +46,17 @@ void main() {
       test('first and last sides are equal', () {
         final bool result = triangle.isosceles(4, 3, 4);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('equilateral triangles are also isosceles', () {
         final bool result = triangle.isosceles(4, 4, 4);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('no sides are equal', () {
         final bool result = triangle.isosceles(2, 3, 4);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('first triangle inequality violation', () {
         final bool result = triangle.isosceles(1, 1, 3);
