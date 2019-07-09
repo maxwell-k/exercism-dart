@@ -19,7 +19,7 @@ void main() {
       test('allergic to eggs and something else', () {
         final bool result = allergies.allergicTo('eggs', 3);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to something, but not eggs', () {
         final bool result = allergies.allergicTo('eggs', 2);
