@@ -10,9 +10,6 @@ enum Item {
 }
 
 class Allergies {
-  /* Map<String, int> items = Map<String, int>.fromIterable(Item.values, */
-  /*     key: (dynamic i) => i.toString().split('.').last, */
-  /*     value: (dynamic i) => 1 << (i.index as int)); */
   List<String> items =
       Item.values.map((i) => i.toString().split('.').last).toList();
 

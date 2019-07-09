@@ -41,12 +41,12 @@ void main() {
       test('allergic only to peanuts', () {
         final bool result = allergies.allergicTo('peanuts', 2);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to peanuts and something else', () {
         final bool result = allergies.allergicTo('peanuts', 7);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to something, but not peanuts', () {
         final bool result = allergies.allergicTo('peanuts', 5);
