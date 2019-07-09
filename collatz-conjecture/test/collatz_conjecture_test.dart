@@ -37,10 +37,10 @@ void main() {
 
     test('zero is an error', () {
       expect(() => collatzConjecture.steps(0), throwsA(onlyPositive));
-    }, skip: true);
+    });
 
     test('negative value is an error', () {
       expect(() => collatzConjecture.steps(-15), throwsA(onlyPositive));
-    }, skip: true);
+    });
   });
 }
