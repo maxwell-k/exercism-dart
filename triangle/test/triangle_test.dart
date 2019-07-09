@@ -14,12 +14,12 @@ void main() {
       test('any side is unequal', () {
         final bool result = triangle.equilateral(2, 3, 2);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('no sides are equal', () {
         final bool result = triangle.equilateral(5, 4, 6);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('all zero sides is not a triangle', () {
         final bool result = triangle.equilateral(0, 0, 0);
