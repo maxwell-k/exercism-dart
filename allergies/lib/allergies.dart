@@ -1,4 +1,4 @@
-enum Item {
+enum Allergy {
   eggs,
   peanuts,
   shellfish,
@@ -10,11 +10,13 @@ enum Item {
 }
 
 class Allergies {
-  List<String> items =
-      Item.values.map((i) => i.toString().split('.').last).toList();
+  List<String> allergies =
+      Allergy.values.map((i) => i.toString().split('.').last).toList();
 
   bool allergicTo(String item, int score) =>
-      (score >> this.items.indexOf(item)) % 2 == 1;
+      (score >> this.allergies.indexOf(item)) % 2 == 1;
 
-  List<String> list(int score) => List<String>();
+  List<String> list(int score) {
+    return List<String>();
+  }
 }
