@@ -22,7 +22,7 @@ void main() {
     test('sixth prime', () {
       final int result = nthPrime.prime(6);
       expect(result, equals(13));
-    }, skip: true);
+    });
 
     test('big prime', () {
       final int result = nthPrime.prime(10001);
