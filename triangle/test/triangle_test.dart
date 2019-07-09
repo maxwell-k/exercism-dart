@@ -61,7 +61,7 @@ void main() {
       test('first triangle inequality violation', () {
         final bool result = triangle.isosceles(1, 1, 3);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('second triangle inequality violation', () {
         final bool result = triangle.isosceles(1, 3, 1);
