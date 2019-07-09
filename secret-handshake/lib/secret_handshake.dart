@@ -5,6 +5,8 @@ class SecretHandshake {
     List<String> output = List<String>();
     for (int i = 0; i < events.length; i++)
       if (message & (1 << i) > 0) output.add(events[i]);
-    return (message & 16 > 0) ? output.reversed.toList() : output;
+    return (message & 1 << events.length > 0)
+        ? output.reversed.toList()
+        : output;
   }
 }
