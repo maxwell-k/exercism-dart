@@ -9,7 +9,7 @@ void main() {
       test('all sides are equal', () {
         final bool result = triangle.equilateral(2, 2, 2);
         expect(result, equals(true));
-      }, skip: false);
+      });
 
       test('any side is unequal', () {
         final bool result = triangle.equilateral(2, 3, 2);
@@ -36,7 +36,7 @@ void main() {
       test('last two sides are equal', () {
         final bool result = triangle.isosceles(3, 4, 4);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('first two sides are equal', () {
         final bool result = triangle.isosceles(4, 4, 3);
@@ -83,7 +83,7 @@ void main() {
       test('no sides are equal', () {
         final bool result = triangle.scalene(5, 4, 6);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('all sides are equal', () {
         final bool result = triangle.scalene(4, 4, 4);
