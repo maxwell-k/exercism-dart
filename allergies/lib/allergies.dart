@@ -1,4 +1,4 @@
 class Allergies {
   bool allergicTo(String item, int score) => false;
-  List<Object> list(int score) => List<String>();
+  List<String> list(int score) => List<String>();
 }

@@ -2,7 +2,7 @@ import 'package:allergies/allergies.dart';
 import 'package:test/test.dart';
 
 void main() {
-  final allergies = new Allergies();
+  final allergies = Allergies();
 
   group('Allergies', () {
     group('testing for eggs allergy', () {
@@ -254,18 +254,41 @@ void main() {
 
       test('lots of stuff', () {
         final List<String> result = allergies.list(248);
-        expect(result, equals(['strawberries', 'tomatoes', 'chocolate', 'pollen', 'cats']));
+        expect(
+            result,
+            equals(
+                ['strawberries', 'tomatoes', 'chocolate', 'pollen', 'cats']));
       }, skip: true);
 
       test('everything', () {
         final List<String> result = allergies.list(255);
-        expect(result,
-            equals(['eggs', 'peanuts', 'shellfish', 'strawberries', 'tomatoes', 'chocolate', 'pollen', 'cats']));
+        expect(
+            result,
+            equals([
+              'eggs',
+              'peanuts',
+              'shellfish',
+              'strawberries',
+              'tomatoes',
+              'chocolate',
+              'pollen',
+              'cats'
+            ]));
       }, skip: true);
 
       test('no allergen score parts', () {
         final List<String> result = allergies.list(509);
-        expect(result, equals(['eggs', 'shellfish', 'strawberries', 'tomatoes', 'chocolate', 'pollen', 'cats']));
+        expect(
+            result,
+            equals([
+              'eggs',
+              'shellfish',
+              'strawberries',
+              'tomatoes',
+              'chocolate',
+              'pollen',
+              'cats'
+            ]));
       }, skip: true);
     });
   });
