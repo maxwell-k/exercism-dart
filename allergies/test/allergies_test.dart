@@ -9,7 +9,7 @@ void main() {
       test('not allergic to anything', () {
         final bool result = allergies.allergicTo('eggs', 0);
         expect(result, equals(false));
-      }, skip: false);
+      });
 
       test('allergic only to eggs', () {
         final bool result = allergies.allergicTo('eggs', 1);
@@ -240,17 +240,17 @@ void main() {
       test('just strawberries', () {
         final List<String> result = allergies.list(8);
         expect(result, equals(['strawberries']));
-      }, skip: true);
+      });
 
       test('eggs and peanuts', () {
         final List<String> result = allergies.list(3);
         expect(result, equals(['eggs', 'peanuts']));
-      }, skip: true);
+      });
 
       test('more than eggs but not peanuts', () {
         final List<String> result = allergies.list(5);
         expect(result, equals(['eggs', 'shellfish']));
-      }, skip: true);
+      });
 
       test('lots of stuff', () {
         final List<String> result = allergies.list(248);
@@ -258,7 +258,7 @@ void main() {
             result,
             equals(
                 ['strawberries', 'tomatoes', 'chocolate', 'pollen', 'cats']));
-      }, skip: true);
+      });
 
       test('everything', () {
         final List<String> result = allergies.list(255);
@@ -274,7 +274,7 @@ void main() {
               'pollen',
               'cats'
             ]));
-      }, skip: true);
+      });
 
       test('no allergen score parts', () {
         final List<String> result = allergies.list(509);
@@ -289,7 +289,7 @@ void main() {
               'pollen',
               'cats'
             ]));
-      }, skip: true);
+      });
     });
   });
 }
