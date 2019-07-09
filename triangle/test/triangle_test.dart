@@ -66,17 +66,17 @@ void main() {
       test('second triangle inequality violation', () {
         final bool result = triangle.isosceles(1, 3, 1);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('third triangle inequality violation', () {
         final bool result = triangle.isosceles(3, 1, 1);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('sides may be floats', () {
         final bool result = triangle.isosceles(0.5, 0.4, 0.5);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
 
     group('scalene triangle', () {
