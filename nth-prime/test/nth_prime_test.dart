@@ -27,7 +27,7 @@ void main() {
     test('big prime', () {
       final int result = nthPrime.prime(10001);
       expect(result, equals(104743));
-    }, skip: true);
+    });
 
     test('there is no zeroth prime', () {
       expect(() => nthPrime.prime(0), throwsA(noZerothPrime));
