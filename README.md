@@ -42,7 +42,7 @@ Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864).
 | 11 | Pangram                |          | ✓     |           |
 | 12 | Luhn                   |          | ✓     |           |
 | 13 | Minesweeper            |          | ✓     |           |
-| 14 | Collatz Conjecture     |          |       |           |
+| 14 | Collatz Conjecture     |          | ✓     |           |
 | 15 | Nth Prime              |          |       |           |
 | 16 | Allergies              |          |       |           |
 | 17 | Triangle               |          |       |           |
