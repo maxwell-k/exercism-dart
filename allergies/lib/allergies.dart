@@ -9,9 +9,10 @@ enum Allergy {
   cats,
 }
 
+String describe(Allergy i) => i.toString().split('.').last;
+
 class Allergies {
-  List<String> allergies =
-      Allergy.values.map((i) => i.toString().split('.').last).toList();
+  List<String> allergies = Allergy.values.map(describe).toList();
 
   bool allergicTo(String item, int score) =>
       (score >> this.allergies.indexOf(item)) % 2 == 1;
@@ -19,7 +20,7 @@ class Allergies {
   List<String> list(int score) {
     return Allergy.values
         .where((i) => score >> i.index % 2 == 1)
-        .map((i) => i.toString().split('.').last)
+        .map(describe)
         .toList();
   }
 }
