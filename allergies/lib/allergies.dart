@@ -21,7 +21,7 @@ class Allergies {
 
   List<String> list(int score) {
     return Allergy.values
-        .where((i) => score >> i.index % 2 == 1)
+        .where((i) => check(score, i.index))
         .map(describe)
         .toList();
   }
