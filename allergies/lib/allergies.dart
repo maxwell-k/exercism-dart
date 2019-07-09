@@ -16,7 +16,7 @@ class Allergies {
       key: (dynamic i) => i.toString().split('.').last,
       value: (dynamic i) => pow(2, i.index as num) as int);
 
-  bool allergicTo(String item, int score) => score > this.items[item];
+  bool allergicTo(String item, int score) => score >= this.items[item];
 
   List<String> list(int score) => List<String>();
 }
