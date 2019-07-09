@@ -41,7 +41,7 @@ void main() {
       test('first two sides are equal', () {
         final bool result = triangle.isosceles(4, 4, 3);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('first and last sides are equal', () {
         final bool result = triangle.isosceles(4, 3, 4);
