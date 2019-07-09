@@ -19,17 +19,17 @@ void main() {
       test('close your eyes for 100', () {
         final List<String> result = secretHandshake.commands(4);
         expect(result, equals(['close your eyes']));
-      }, skip: true);
+      });
 
       test('jump for 1000', () {
         final List<String> result = secretHandshake.commands(8);
         expect(result, equals(['jump']));
-      }, skip: true);
+      });
 
       test('combine two actions', () {
         final List<String> result = secretHandshake.commands(3);
         expect(result, equals(['wink', 'double blink']));
-      }, skip: true);
+      });
 
       test('reverse two actions', () {
         final List<String> result = secretHandshake.commands(19);
@@ -48,12 +48,14 @@ void main() {
 
       test('all possible actions', () {
         final List<String> result = secretHandshake.commands(15);
-        expect(result, equals(['wink', 'double blink', 'close your eyes', 'jump']));
+        expect(result,
+            equals(['wink', 'double blink', 'close your eyes', 'jump']));
       }, skip: true);
 
       test('reverse all possible actions', () {
         final List<String> result = secretHandshake.commands(31);
-        expect(result, equals(['jump', 'close your eyes', 'double blink', 'wink']));
+        expect(result,
+            equals(['jump', 'close your eyes', 'double blink', 'wink']));
       }, skip: true);
 
       test('do nothing for zero', () {
