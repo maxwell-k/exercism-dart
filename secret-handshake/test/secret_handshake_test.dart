@@ -9,7 +9,7 @@ void main() {
       test('wink for 1', () {
         final List<String> result = secretHandshake.commands(1);
         expect(result, equals(['wink']));
-      }, skip: false);
+      });
 
       test('double blink for 10', () {
         final List<String> result = secretHandshake.commands(2);
