@@ -36,7 +36,7 @@ void main() {
       test('not allergic to anything', () {
         final bool result = allergies.allergicTo('peanuts', 0);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic only to peanuts', () {
         final bool result = allergies.allergicTo('peanuts', 2);
