@@ -63,44 +63,44 @@ void main() {
       test('not allergic to anything', () {
         final bool result = allergies.allergicTo('shellfish', 0);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic only to shellfish', () {
         final bool result = allergies.allergicTo('shellfish', 4);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to shellfish and something else', () {
         final bool result = allergies.allergicTo('shellfish', 14);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to something, but not shellfish', () {
         final bool result = allergies.allergicTo('shellfish', 10);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic to everything', () {
         final bool result = allergies.allergicTo('shellfish', 255);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
 
     group('testing for strawberries allergy', () {
       test('not allergic to anything', () {
         final bool result = allergies.allergicTo('strawberries', 0);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic only to strawberries', () {
         final bool result = allergies.allergicTo('strawberries', 8);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to strawberries and something else', () {
         final bool result = allergies.allergicTo('strawberries', 28);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to something, but not strawberries', () {
         final bool result = allergies.allergicTo('strawberries', 20);
