@@ -181,44 +181,44 @@ void main() {
       test('allergic to pollen and something else', () {
         final bool result = allergies.allergicTo('pollen', 224);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to something, but not pollen', () {
         final bool result = allergies.allergicTo('pollen', 160);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic to everything', () {
         final bool result = allergies.allergicTo('pollen', 255);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
 
     group('testing for cats allergy', () {
       test('not allergic to anything', () {
         final bool result = allergies.allergicTo('cats', 0);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic only to cats', () {
         final bool result = allergies.allergicTo('cats', 128);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to cats and something else', () {
         final bool result = allergies.allergicTo('cats', 192);
         expect(result, equals(true));
-      }, skip: true);
+      });
 
       test('allergic to something, but not cats', () {
         final bool result = allergies.allergicTo('cats', 64);
         expect(result, equals(false));
-      }, skip: true);
+      });
 
       test('allergic to everything', () {
         final bool result = allergies.allergicTo('cats', 255);
         expect(result, equals(true));
-      }, skip: true);
+      });
     });
 
     group('list when:', () {
